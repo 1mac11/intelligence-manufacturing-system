@@ -26,10 +26,7 @@ services:
       - 8000
     depends_on:
       - db
-  redis:
-    image: redis:3
-    expose:
-      - 6378
+
   celery:
     restart: always
     build:
@@ -43,8 +40,9 @@ services:
       - .env
     depends_on:
       - db
-      - redis
       - web
+      - rabbitmq3
+
   nginx:
     image: nginx:1.21-alpine
     container_name: nginx
@@ -60,6 +58,15 @@ services:
       - "443:443"
     depends_on:
       - web
+
+  rabbitmq3:
+    container_name: rabbitmq
+    image: rabbitmq:3.8-management-alpine
+    env_file:
+      - .env
+    ports:
+      - '5672:5672' # AMQP protocol port
+      - '15672:15672' # HTTP management UI
 
 volumes:
   pg_data:

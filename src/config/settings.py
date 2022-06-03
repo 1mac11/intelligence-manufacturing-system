@@ -95,7 +95,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres://manifactor:supersecretpassword@localhost:5434/manifactory_db'),
+    'default': env.db('DATABASE_URL',
+                      default='postgres://manifactor:supersecretpassword@localhost:5434/manifactory_db'),
 }
 
 # Password validation
@@ -141,8 +142,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_BROKER_URL = env('CELERY_BROKER_URL', default='redis://localhost:6379/0')
-CELERY_RESULT_BACKEND = env('CELERY_RESULT_BACKEND', default='redis://localhost:6379/1')
+CELERY_BROKER_URL = env('CELERY_BROKER_URL', default='amqp://manifactor:manifactor@rabbitmq3:5672/')
+CELERY_RESULT_BACKEND = env('CELERY_RESULT_BACKEND', default='amqp://manifactor:manifactor@rabbitmq3:5672/')
 
 try:
     from .local_settings import *
