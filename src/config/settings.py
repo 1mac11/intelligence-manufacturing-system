@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres://manifactor:supersecretpassword@localhost:5432/manifactory_db'),
+    'default': env.db('DATABASE_URL', default='postgres://manifactor:supersecretpassword@localhost:5434/manifactory_db'),
 }
 
 # Password validation
