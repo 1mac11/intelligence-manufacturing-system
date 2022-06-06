@@ -163,3 +163,5 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=29),
 }
+
+COUNTRIES_FLAG_URL = '//localhost:8000/{code}.png'
