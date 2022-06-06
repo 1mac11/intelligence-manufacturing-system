@@ -10,8 +10,8 @@ class IDGenerator(BaseHashGenerator):
     def __init__(self, lng):
         self.lng = lng
 
-        def hash(self):
-            return generate_client_id(length=self.lng, chars=UNICODE_ASCII_CHARACTER_SET)
+    def hash(self):
+        return generate_client_id(length=self.lng, chars=UNICODE_ASCII_CHARACTER_SET)
 
 
 def id_generator(lng=16):

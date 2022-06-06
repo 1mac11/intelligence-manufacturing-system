@@ -56,7 +56,7 @@ INSTALLED_APPS = [
 ]
 
 LOCAL_APPS = [
-    # 'accounts.apps.AccountsConfig',
+    'api.apps.ApiConfig',
 ]
 
 INSTALLED_APPS += THIRD_PARTY + LOCAL_APPS
