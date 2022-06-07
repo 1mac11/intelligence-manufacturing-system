@@ -1,6 +1,6 @@
 from django.db import migrations, models
 import django_countries.fields
-from api.services import id_generator
+from core.utils.services import id_generator
 
 
 class Migration(migrations.Migration):

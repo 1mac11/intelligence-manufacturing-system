@@ -1,8 +1,8 @@
 from rest_framework import permissions
 from rest_framework.viewsets import ModelViewSet
 
-from api.models import Territory
-from api.serializers import TerritorySerializer
+from api.serializers.territory import TerritorySerializer
+from core.models import Territory
 
 
 class TerritoryViewSet(ModelViewSet):

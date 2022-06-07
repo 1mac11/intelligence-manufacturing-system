@@ -1,12 +1,7 @@
 from rest_framework import serializers
 
-from api.models import Territory, BaseModel
-
-
-class BaseModelSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = BaseModel
-        fields = ('id', 'unique_code', 'created_at',)
+from api.serializers.base import BaseModelSerializer
+from core.models import Territory
 
 
 class TerritorySerializer(serializers.ModelSerializer):

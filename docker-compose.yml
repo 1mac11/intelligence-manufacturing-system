@@ -32,7 +32,7 @@ services:
     build:
       context: ./src
       dockerfile: Dockerfile
-    command: celery -A config worker -l info
+    command: celery -A manufacturing_system worker -l info
     volumes:
       - static_volume:/app/staticfiles
       - media_volume:/app/media

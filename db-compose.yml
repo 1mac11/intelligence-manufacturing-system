@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-alpine
+    container_name: database
+    env_file:
+      - .env
+    volumes:
+      - pg_data:/var/lib/postgresql
+    restart: always
+    ports:
+      - "5434:5432"
+
+  rabbitmq3:
+    container_name: rabbitmq
+    image: rabbitmq:3.8-management-alpine
+    env_file:
+      - .env
+    ports:
+      - '5672:5672' # AMQP protocol port
+      - '15672:15672' # HTTP management UI
+
+volumes:
+  pg_data:
