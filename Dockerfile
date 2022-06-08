@@ -6,18 +6,18 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
+COPY Pipfile /app/
+COPY Pipfile.lock /app/
+
 RUN mkdir /app/staticfiles
 RUN mkdir /app/media
 
 RUN apk update \
-    && apk add postgresql-dev gcc python3-dev musl-dev
+    && apk add postgresql-dev gcc python3-dev musl-dev libpq-dev
 
-COPY ./requirements.txt .
+RUN pip install pipenv && pipenv install --system
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
-
-COPY ./scripts/entrypoint.sh .
+COPY scripts/entrypoint.sh .
 COPY . .
 
 ENTRYPOINT ["/app/entrypoint.sh"]
