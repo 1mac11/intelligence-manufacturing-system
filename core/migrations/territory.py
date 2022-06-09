@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
             name='Territory',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255)),
-                ('address', models.CharField(blank=True, max_length=255, null=True)),
+                ('name', models.CharField(max_length=255, unique=True)),
+                ('address', models.CharField(max_length=255)),
                 ('area', models.FloatField(blank=True, null=True)),
                 ('country', django_countries.fields.CountryField(blank=True, max_length=2, null=True)),
                 ('status', models.ForeignKey(to='core.Status', on_delete=models.deletion.CASCADE,

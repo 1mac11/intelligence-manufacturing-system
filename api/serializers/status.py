@@ -8,5 +8,3 @@ class StatusSerializer(serializers.ModelSerializer):
     class Meta(BaseModelSerializer.Meta):
         model = Status
         fields = BaseModelSerializer.Meta.fields + ('name',)
-
-

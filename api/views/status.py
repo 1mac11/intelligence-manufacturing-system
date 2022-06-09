@@ -8,5 +8,5 @@ from core.models import Status
 class StatusViewSet(ModelViewSet):
     queryset = Status.objects.all()
     serializer_class = StatusSerializer
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     http_method_names = ['get', 'post', 'put', 'delete']

@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             name='Factory',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255)),
+                ('name', models.CharField(max_length=255, unique=True)),
                 ('type',
                  models.ForeignKey(to='core.FactoryType', on_delete=models.deletion.CASCADE, related_name='factories')),
                 ('status', models.ForeignKey('core.Status', on_delete=models.CASCADE, related_name='factories')),
