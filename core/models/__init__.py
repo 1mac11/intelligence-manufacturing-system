@@ -7,7 +7,7 @@ from .building_type import BuildingType
 from .building import Building
 from .machine_tool_type import MachineToolType
 from .machine_tool import MachineTool
-# from .user_role import UserRole
-# from .user import User
-# from .user_type import UserType
-# from .user_detail import UserDetail
+from .user_role import UserRole
+from .user import User
+from .user_type import UserType
+from .user_detail import UserDetail

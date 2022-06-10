@@ -7,3 +7,4 @@ from .building import BuildingSerializer
 from .building_type import BuildingTypeSerializer
 from .machine_tool_type import MachineToolTypeSerializer
 from .machine_tool import MachineToolSerializer
+from .user import RegisterSerializer, UserSerializer, AccessTokenSerializer
