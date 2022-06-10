@@ -2,3 +2,8 @@ from .base import BaseModelSerializer
 from .status import StatusSerializer
 from .territory import TerritorySerializer
 from .factory_type import FactoryTypeSerializer
+from .factory import FactorySerializer
+from .building import BuildingSerializer
+from .building_type import BuildingTypeSerializer
+from .machine_tool_type import MachineToolTypeSerializer
+from .machine_tool import MachineToolSerializer
