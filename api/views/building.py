@@ -8,5 +8,5 @@ from core.models import Building
 class BuildingViewSet(ModelViewSet):
     queryset = Building.objects.all()
     serializer_class = BuildingSerializer
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     http_method_names = ['get', 'post', 'put', 'delete']

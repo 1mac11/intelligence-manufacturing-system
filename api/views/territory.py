@@ -8,5 +8,5 @@ from core.models import Territory
 class TerritoryViewSet(ModelViewSet):
     queryset = Territory.objects.all()
     serializer_class = TerritorySerializer
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     http_method_names = ['get', 'post', 'put', 'delete']

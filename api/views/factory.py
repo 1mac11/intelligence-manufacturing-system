@@ -8,5 +8,5 @@ from core.models import Factory
 class FactoryViewSet(ModelViewSet):
     queryset = Factory.objects.all()
     serializer_class = FactorySerializer
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     http_method_names = ['get', 'post', 'put', 'delete']

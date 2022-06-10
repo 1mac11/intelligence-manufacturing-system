@@ -9,4 +9,5 @@ class Territory(BaseModel):
     address = models.CharField(max_length=255)
     area = models.FloatField(blank=True, null=True)
     country = CountryField(blank=True, null=True)
-    status = models.ForeignKey('core.Status', on_delete=models.CASCADE, related_name='territories')
+    status = models.ForeignKey('core.Status', on_delete=models.SET_NULL, related_name='territories', blank=True,
+                               null=True)
