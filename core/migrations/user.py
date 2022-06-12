@@ -5,7 +5,6 @@ from django.utils import timezone
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('auth', '0012_alter_user_first_name_max_length'),
         ('core', 'user_role'),
     ]
 
@@ -43,4 +42,7 @@ class Migration(migrations.Migration):
                 ('objects', core.models.user.UserManager()),
             ],
         )
+    ]
+    run_before = [
+        ('admin', '__first__'),
     ]
