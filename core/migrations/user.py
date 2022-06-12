@@ -1,4 +1,4 @@
-import core.models.user
+from core.models.user import UserManager
 from django.db import migrations, models
 from django.utils import timezone
 
@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 'abstract': False,
             },
             managers=[
-                ('objects', core.models.user.UserManager()),
+                ('objects', UserManager()),
             ],
         )
     ]

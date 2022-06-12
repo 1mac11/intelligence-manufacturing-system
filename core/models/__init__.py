@@ -11,3 +11,4 @@ from .user_role import UserRole
 from .user import User
 from .user_type import UserType
 from .user_detail import UserDetail
+from .team import Team
