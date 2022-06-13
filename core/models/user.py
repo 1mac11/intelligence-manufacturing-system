@@ -42,7 +42,6 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     """User model."""
     username = None
-    groups = None
     email = models.EmailField(_('email address'), unique=True)
     role = models.ForeignKey('core.UserRole', on_delete=models.SET_NULL, related_name='users', null=True, blank=True)
     personal = models.JSONField(default=dict)
