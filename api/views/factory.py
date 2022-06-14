@@ -1,12 +1,12 @@
 from rest_framework import permissions
 from rest_framework.viewsets import ModelViewSet
 
-from api.serializers import TerritorySerializer
-from core.models import Territory
+from api.serializers import FactorySerializer
+from core.models import Factory
 
 
-class TerritoryViewSet(ModelViewSet):
-    queryset = Territory.objects.all()
-    serializer_class = TerritorySerializer
+class FactoryViewSet(ModelViewSet):
+    queryset = Factory.objects.all()
+    serializer_class = FactorySerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     http_method_names = ['get', 'post', 'put', 'delete']

@@ -5,6 +5,9 @@ from core.models import Territory
 
 
 class TerritorySerializer(serializers.ModelSerializer):
-    class Meta:
+    status_id = serializers.IntegerField(write_only=True)
+    status = serializers.CharField(source='status.name', read_only=True)
+
+    class Meta(BaseModelSerializer.Meta):
         model = Territory
-        fields = BaseModelSerializer.Meta.fields + ('name', 'area', 'address', 'country')
+        fields = BaseModelSerializer.Meta.fields + ('name', 'status_id', 'area', 'address', 'country', 'status')

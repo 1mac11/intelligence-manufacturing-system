@@ -5,7 +5,9 @@ from core.models import BaseModel
 
 
 class Territory(BaseModel):
-    name = models.CharField(max_length=255)
-    address = models.CharField(max_length=255, blank=True, null=True)
+    name = models.CharField(max_length=255, unique=True)
+    address = models.CharField(max_length=255)
     area = models.FloatField(blank=True, null=True)
     country = CountryField(blank=True, null=True)
+    status = models.ForeignKey('core.Status', on_delete=models.SET_NULL, related_name='territories', blank=True,
+                               null=True)
