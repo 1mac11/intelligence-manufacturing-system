@@ -16,6 +16,7 @@ router.register('building_types', views.BuildingTypeViewSet)
 router.register('machine_tools', views.MachineToolViewSet)
 router.register('machine_tool_types', views.MachineToolTypeViewSet)
 router.register('users', views.UserViewSet)
+router.register('teams', views.TeamViewSet)
 
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register-user'),

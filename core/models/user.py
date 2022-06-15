@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from django.db import models
 
 from core.managers import UserManager
+from core.models.user_role import UserRoleChoice
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -41,3 +42,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+    def is_owner(self):
+        return self.role.name == UserRoleChoice.OWNER

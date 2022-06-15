@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from api.serializers import BaseModelSerializer, FactorySerializer
-from core.models import Factory
+from core.models import Building
 
 
 class BuildingSerializer(serializers.ModelSerializer):
@@ -15,6 +15,6 @@ class BuildingSerializer(serializers.ModelSerializer):
     type = serializers.CharField(source='type.name', read_only=True)
 
     class Meta(BaseModelSerializer.Meta):
-        model = Factory
+        model = Building
         fields = BaseModelSerializer.Meta.fields + (
             'name', 'status_id', 'status', 'factory_id', 'factory', 'type_id', 'type')
