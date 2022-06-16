@@ -11,3 +11,10 @@ class StatusChoices(models.TextChoices):
 
 class Status(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=StatusChoices.choices)
+
+    class Meta:
+        verbose_name = 'status'
+        verbose_name_plural = 'statuses'
+
+    def __str__(self):
+        return self.name

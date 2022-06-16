@@ -9,3 +9,10 @@ class Building(BaseModel):
     status = models.ForeignKey('core.Status', on_delete=models.SET_NULL, related_name='buildings', blank=True,
                                null=True)
     factory = models.ForeignKey('core.Factory', on_delete=models.CASCADE, related_name='buildings')
+
+    class Meta:
+        verbose_name = 'building'
+        verbose_name_plural = 'buildings'
+
+    def __str__(self):
+        return self.name
