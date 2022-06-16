@@ -7,3 +7,4 @@ from .building import BuildingViewSet
 from .machine_tool_type import MachineToolTypeViewSet
 from .machine_tool import MachineToolViewSet
 from .user import RegisterView, AccessTokenView, LogoutView, UserViewSet
+from .team import TeamViewSet
