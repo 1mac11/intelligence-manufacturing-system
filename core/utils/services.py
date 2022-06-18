@@ -23,4 +23,4 @@ def id_generator(lng=16):
 
 def get_random_string(length=10, starts_with='', ends_with=''):
     letters = string.ascii_lowercase
-    return starts_with + ''.join(random.choice(letters) for _ in range(length)) + ends_with
+    return (starts_with + ''.join(random.choice(letters) for _ in range(length)) + ends_with).title()
