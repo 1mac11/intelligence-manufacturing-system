@@ -21,8 +21,8 @@ class UserDetail(BaseModel):
     type = models.ForeignKey('core.UserType', on_delete=models.SET_NULL, related_name='users', null=True, blank=True)
 
     class Meta:
-        verbose_name = 'user detail'
-        verbose_name_plural = 'user details'
+        verbose_name = 'User Detail'
+        verbose_name_plural = 'User Details'
 
     def __str__(self):
         return self.user.__str__()

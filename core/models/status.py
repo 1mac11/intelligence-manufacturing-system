@@ -13,8 +13,8 @@ class Status(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=StatusChoices.choices)
 
     class Meta:
-        verbose_name = 'status'
-        verbose_name_plural = 'statuses'
+        verbose_name = 'Status'
+        verbose_name_plural = 'Statuses'
 
     def __str__(self):
         return self.name

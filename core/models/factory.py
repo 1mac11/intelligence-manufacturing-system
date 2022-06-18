@@ -11,8 +11,8 @@ class Factory(BaseModel):
     territory = models.ForeignKey('core.Territory', on_delete=models.CASCADE, related_name='factories')
 
     class Meta:
-        verbose_name = 'factory'
-        verbose_name_plural = 'factories'
+        verbose_name = 'Factory'
+        verbose_name_plural = 'Factories'
 
     def __str__(self):
         return self.name

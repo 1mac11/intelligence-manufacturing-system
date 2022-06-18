@@ -13,8 +13,8 @@ class UserRole(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=UserRoleChoice.choices)
 
     class Meta:
-        verbose_name = 'user role'
-        verbose_name_plural = 'user roles'
+        verbose_name = 'User Role'
+        verbose_name_plural = 'Rser Roles'
 
     def __str__(self):
         return self.name

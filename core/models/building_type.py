@@ -15,8 +15,8 @@ class BuildingType(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=BuildingTypeChoices.choices)
 
     class Meta:
-        verbose_name = 'building type'
-        verbose_name_plural = 'building types'
+        verbose_name = 'Building type'
+        verbose_name_plural = 'Building types'
 
     def __str__(self):
         return self.name

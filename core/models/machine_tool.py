@@ -12,8 +12,8 @@ class MachineTool(BaseModel):
     building = models.ForeignKey('core.Building', on_delete=models.CASCADE, related_name='machine_tools')
 
     class Meta:
-        verbose_name = 'machine tool'
-        verbose_name_plural = 'machine tools'
+        verbose_name = 'Machine tool'
+        verbose_name_plural = 'Machine tools'
 
     def __str__(self):
         return self.name

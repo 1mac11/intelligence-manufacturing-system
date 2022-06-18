@@ -13,8 +13,8 @@ class Territory(BaseModel):
                                null=True)
 
     class Meta:
-        verbose_name = 'territory'
-        verbose_name_plural = 'territories'
+        verbose_name = 'Territory'
+        verbose_name_plural = 'Territories'
 
     def __str__(self):
         return self.name

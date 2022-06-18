@@ -4,7 +4,7 @@ from core.models import BaseModel
 
 
 class UserTypeChoices(models.TextChoices):
-    IT = ('it', 'IT')
+    IT = ('it', _('IT'))
     MANAGER = ('manager', _('Manager'))
     SUPERVISOR = ('supervisor', _('Supervisor'))
     WORKER = ('worker', _('Worker'))
@@ -15,8 +15,8 @@ class UserType(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=UserTypeChoices.choices)
 
     class Meta:
-        verbose_name = 'building type'
-        verbose_name_plural = 'building types'
+        verbose_name = 'User type'
+        verbose_name_plural = 'User types'
 
     def __str__(self):
         return self.name

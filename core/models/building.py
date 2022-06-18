@@ -11,8 +11,8 @@ class Building(BaseModel):
     factory = models.ForeignKey('core.Factory', on_delete=models.CASCADE, related_name='buildings')
 
     class Meta:
-        verbose_name = 'building'
-        verbose_name_plural = 'buildings'
+        verbose_name = 'Building'
+        verbose_name_plural = 'Buildings'
 
     def __str__(self):
         return self.name
