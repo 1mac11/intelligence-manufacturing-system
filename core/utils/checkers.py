@@ -10,7 +10,6 @@ from core.models.user_type import UserTypeChoices
 
 def check_managers(managers, team=None):
     if team is None:
-        print(managers)
         for manager in managers:
             if manager.teams.exists():
                 raise ValidationError({'manager': "Manager shouldn't be on other teams"})
