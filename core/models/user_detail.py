@@ -19,3 +19,10 @@ class UserDetail(BaseModel):
     salary = models.DecimalField(max_digits=20, decimal_places=4, blank=True, null=True)
     level = models.CharField(choices=LevelChoice.choices, max_length=100)
     type = models.ForeignKey('core.UserType', on_delete=models.SET_NULL, related_name='users', null=True, blank=True)
+
+    class Meta:
+        verbose_name = 'User Detail'
+        verbose_name_plural = 'User Details'
+
+    def __str__(self):
+        return self.user.__str__()

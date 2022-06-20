@@ -9,3 +9,10 @@ class Factory(BaseModel):
     status = models.ForeignKey('core.Status', on_delete=models.SET_NULL, related_name='factories', blank=True,
                                null=True)
     territory = models.ForeignKey('core.Territory', on_delete=models.CASCADE, related_name='factories')
+
+    class Meta:
+        verbose_name = 'Factory'
+        verbose_name_plural = 'Factories'
+
+    def __str__(self):
+        return self.name

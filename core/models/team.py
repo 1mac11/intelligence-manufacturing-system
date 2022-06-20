@@ -16,5 +16,5 @@ class Team(BaseModel):
         return self.name
 
     class Meta:
-        verbose_name = 'team'
-        verbose_name_plural = 'teams'
+        verbose_name = 'Team'
+        verbose_name_plural = 'Teams'

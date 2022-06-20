@@ -13,3 +13,10 @@ class BuildingTypeChoices(models.TextChoices):
 
 class BuildingType(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=BuildingTypeChoices.choices)
+
+    class Meta:
+        verbose_name = 'Building type'
+        verbose_name_plural = 'Building types'
+
+    def __str__(self):
+        return self.name

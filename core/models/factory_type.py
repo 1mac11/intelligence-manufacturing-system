@@ -11,3 +11,10 @@ class FactoryTypeChoices(models.TextChoices):
 
 class FactoryType(BaseModel):
     name = models.CharField(max_length=255, unique=True, choices=FactoryTypeChoices.choices)
+
+    class Meta:
+        verbose_name = 'Factory type'
+        verbose_name_plural = 'Factory types'
+
+    def __str__(self):
+        return self.name

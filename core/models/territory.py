@@ -11,3 +11,10 @@ class Territory(BaseModel):
     country = CountryField(blank=True, null=True)
     status = models.ForeignKey('core.Status', on_delete=models.SET_NULL, related_name='territories', blank=True,
                                null=True)
+
+    class Meta:
+        verbose_name = 'Territory'
+        verbose_name_plural = 'Territories'
+
+    def __str__(self):
+        return self.name
