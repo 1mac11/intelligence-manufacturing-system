@@ -14,7 +14,7 @@ class UserRole(BaseModel):
 
     class Meta:
         verbose_name = 'User Role'
-        verbose_name_plural = 'Rser Roles'
+        verbose_name_plural = 'User Roles'
 
     def __str__(self):
         return self.name
