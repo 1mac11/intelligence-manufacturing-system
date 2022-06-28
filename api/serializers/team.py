@@ -33,3 +33,50 @@ class TeamSerializer(BaseModelSerializer):
     def update(self, instance, validated_data):
         validated_data['status'] = Status.objects.get(name=check_team(validated_data.get('users'), team=instance))
         return super().update(instance, validated_data)
+
+
+class AddTeamMemberSerializer(serializers.Serializer):
+    team = serializers.PrimaryKeyRelatedField(queryset=Team.objects.all())
+    member = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
+
+    def validate(self, attrs):
+        team = attrs.get('team')
+        member = attrs.get('member')
+        if member.detail.type.name in [UserTypeChoices.WORKER, UserTypeChoices.MANAGER]:
+            if member.teams.count():
+                raise ValidationError({'user': 'User is on other team.'})
+            if member.detail.type.name == UserTypeChoices.WORKER and team.users.filter(
+                    detail__type__name=UserTypeChoices.WORKER).count() > 4:
+                raise ValidationError({'worker': 'Team already have enough workers.'})
+        else:
+            raise ValidationError({'user': 'User type should be manager or worker'})
+
+        return attrs
+
+    def create(self, validated_data):
+        print(validated_data)
+        team = validated_data.get('team')
+        member = validated_data.get('member')
+        team.users.add(member)
+
+        return validated_data
+
+
+class RemoveTeamMemberSerializer(serializers.Serializer):
+    team = serializers.PrimaryKeyRelatedField(queryset=Team.objects.all())
+    member = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
+
+    def validate(self, attrs):
+        team = attrs.get('team')
+        member = attrs.get('member')
+        if not team.users.filter(id=member.id).exists():
+            raise serializers.ValidationError({'member': 'Member is not in this team'})
+
+        return attrs
+
+    def create(self, validated_data):
+        team = validated_data.get('team')
+        member = validated_data.get('member')
+        team.users.remove(member)
+
+        return team
