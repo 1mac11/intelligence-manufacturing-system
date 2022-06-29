@@ -4,7 +4,8 @@ from rest_framework.exceptions import ValidationError
 from api.serializers import BaseModelSerializer
 from core.models import Team, User, Status
 from core.models.user_type import UserTypeChoices
-from core.utils.checkers import check_team
+from core.utils.checkers import check_team, check_add_team_worker, check_add_team_mechanics, check_add_team_IT, \
+    check_add_team_supervisor, check_add_team_manager
 
 
 class TeamSerializer(BaseModelSerializer):
@@ -42,19 +43,20 @@ class AddTeamMemberSerializer(serializers.Serializer):
     def validate(self, attrs):
         team = attrs.get('team')
         member = attrs.get('member')
-        if member.detail.type.name in [UserTypeChoices.WORKER, UserTypeChoices.MANAGER]:
-            if member.teams.count():
-                raise ValidationError({'user': 'User is on other team.'})
-            if member.detail.type.name == UserTypeChoices.WORKER and team.users.filter(
-                    detail__type__name=UserTypeChoices.WORKER).count() > 4:
-                raise ValidationError({'worker': 'Team already have enough workers.'})
-        else:
-            raise ValidationError({'user': 'User type should be manager or worker'})
+        if member.detail.type.name == UserTypeChoices.WORKER:
+            check_add_team_worker(team=team, worker=member)
+        elif member.detail.type.name == UserTypeChoices.MECHANICS:
+            check_add_team_mechanics(team=team, mechanics=member)
+        elif member.detail.type.name == UserTypeChoices.IT:
+            check_add_team_IT(team=team, member=member)
+        elif member.detail.type.name == UserTypeChoices.SUPERVISOR:
+            check_add_team_supervisor(team=team, supervisor=member)
+        elif member.detail.type.name == UserTypeChoices.MANAGER:
+            check_add_team_manager(team=team, manager=member)
 
         return attrs
 
     def create(self, validated_data):
-        print(validated_data)
         team = validated_data.get('team')
         member = validated_data.get('member')
         team.users.add(member)
