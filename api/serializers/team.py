@@ -1,3 +1,4 @@
+from django.db.transaction import atomic
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 
@@ -6,6 +7,7 @@ from core.models import Team, User, Status
 from core.models.user_type import UserTypeChoices
 from core.utils.checkers import check_team, check_add_team_worker, check_add_team_mechanics, check_add_team_IT, \
     check_add_team_supervisor, check_add_team_manager
+from core.utils.emails import send_invitation_email, send_remove_email
 
 
 class TeamSerializer(BaseModelSerializer):
@@ -56,10 +58,12 @@ class AddTeamMemberSerializer(serializers.Serializer):
 
         return attrs
 
+    @atomic
     def create(self, validated_data):
         team = validated_data.get('team')
         member = validated_data.get('member')
         team.users.add(member)
+        send_invitation_email(team, member)
 
         return validated_data
 
@@ -76,9 +80,11 @@ class RemoveTeamMemberSerializer(serializers.Serializer):
 
         return attrs
 
+    @atomic
     def create(self, validated_data):
         team = validated_data.get('team')
         member = validated_data.get('member')
         team.users.remove(member)
+        send_remove_email(team, member)
 
-        return team
+        return validated_data
