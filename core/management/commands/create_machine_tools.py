@@ -27,7 +27,8 @@ class Command(BaseCommand):
                         name=get_random_string(starts_with=f'Machine_tool_'),
                         type=random.choice(types),
                         status=random.choice(statuses),
-                        building=random.choice(buildings)
+                        building=random.choice(buildings),
+                        team=None
                     ) for _ in range(step)
                 ]
             )
