@@ -17,4 +17,4 @@ class MachineToolSerializer(serializers.ModelSerializer):
     class Meta(BaseModelSerializer.Meta):
         model = MachineTool
         fields = BaseModelSerializer.Meta.fields + (
-            'name', 'status_id', 'status', 'building_id', 'building', 'type_id', 'type')
+            'name', 'status_id', 'status', 'building_id', 'building', 'type_id', 'type', 'team')

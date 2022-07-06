@@ -13,7 +13,7 @@ class TeamSerializer(BaseModelSerializer):
 
     class Meta(BaseModelSerializer.Meta):
         model = Team
-        fields = BaseModelSerializer.Meta.fields + ('name', 'users', 'status', 'machine_tool', 'building')
+        fields = BaseModelSerializer.Meta.fields + ('name', 'users', 'status', 'building')
         extra_fields = {'status': {'read_only': True}}
 
     def validate(self, attrs):

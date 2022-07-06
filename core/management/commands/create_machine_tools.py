@@ -2,7 +2,7 @@ import random
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
-from core.models import MachineTool, MachineToolType, Status, Building
+from core.models import MachineTool, MachineToolType, Status, Building, Team
 from core.utils.services import get_random_string
 
 
@@ -17,6 +17,7 @@ class Command(BaseCommand):
         statuses = Status.objects.all()
         types = MachineToolType.objects.all()
         buildings = Building.objects.all()
+        teams = Team.objects.all()
         total = options.get('total')
         created = 0
         while created < total:
@@ -28,9 +29,8 @@ class Command(BaseCommand):
                         type=random.choice(types),
                         status=random.choice(statuses),
                         building=random.choice(buildings),
-                        team=None
+                        team=random.choice(teams)
                     ) for _ in range(step)
                 ]
             )
             created += step
-

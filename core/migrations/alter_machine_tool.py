@@ -19,4 +19,14 @@ class Migration(migrations.Migration):
             field=models.ForeignKey(blank=True, null=True, on_delete=models.CASCADE, related_name='machine_tools',
                                     to='core.machinetooltype'),
         ),
+        migrations.RemoveField(
+            model_name='team',
+            name='machine_tool'
+        ),
+        migrations.AddField(
+            model_name='team',
+            name='machine_tool',
+            field=models.ForeignKey(blank=True, null=True, on_delete=models.deletion.SET_NULL,
+                                    related_name='teams', to='core.machinetool'),
+        ),
     ]
