@@ -10,3 +10,4 @@ from .machine_tool import MachineToolSerializer
 from .user import RegisterSerializer, UserSerializer, AccessTokenSerializer
 from .team import TeamSerializer, AddTeamMemberSerializer, RemoveTeamMemberSerializer
 from .request_type import RequestTypeSerializer
+from .request_status import RequestStatusSerializer
