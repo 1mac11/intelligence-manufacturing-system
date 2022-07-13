@@ -13,7 +13,10 @@ from core.models import (
     User,
     UserDetail,
     UserType,
-    UserRole
+    UserRole,
+    Request,
+    RequestType,
+    RequestStatus
 )
 
 admin.site.register(Territory)
@@ -29,3 +32,6 @@ admin.site.register(User)
 admin.site.register(UserDetail)
 admin.site.register(UserType)
 admin.site.register(UserRole)
+admin.site.register(Request)
+admin.site.register(RequestType)
+admin.site.register(RequestStatus)

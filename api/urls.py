@@ -17,6 +17,7 @@ router.register('machine_tools', views.MachineToolViewSet)
 router.register('machine_tool_types', views.MachineToolTypeViewSet)
 router.register('users', views.UserViewSet)
 router.register('teams', views.TeamViewSet)
+router.register('request_types', views.RequestTypeViewSet)
 
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register-user'),
