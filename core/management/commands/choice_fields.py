@@ -9,6 +9,7 @@ from core.models import (
     UserType,
     UserRole,
     RequestStatus,
+    RequestType
 )
 from core.models.status import StatusChoices
 from core.models.building_type import BuildingTypeChoices
@@ -17,6 +18,7 @@ from core.models.machine_tool_type import MachineToolTypeChoices
 from core.models.user_type import UserTypeChoices
 from core.models.user_role import UserRoleChoice
 from core.models.request_status import RequestStatusChoices
+from core.models.request_type import RequestTypeChoices
 
 
 class Command(BaseCommand):
@@ -49,4 +51,8 @@ class Command(BaseCommand):
 
         RequestStatus.objects.bulk_create(
             [RequestStatus(name=name) for name in RequestStatusChoices]
+        )
+
+        RequestType.objects.bulk_create(
+            [RequestType(name=name) for name in RequestTypeChoices]
         )
