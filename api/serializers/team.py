@@ -1,4 +1,7 @@
+from django.conf import settings
 from django.db.transaction import atomic
+from django.core.mail import send_mail
+
 from rest_framework import serializers
 
 from api.serializers import BaseModelSerializer
@@ -11,7 +14,7 @@ from core.utils.checkers import (
     check_add_team_supervisor,
     check_add_team_manager,
 )
-from core.tasks import send_invitation_email, send_remove_email
+from core.tasks import send_email
 
 
 class TeamSerializer(BaseModelSerializer):
@@ -51,9 +54,24 @@ class AddTeamMemberSerializer(serializers.Serializer):
         member = validated_data.get('member')
         team.users.add(member)
 
-        send_invitation_email.apply_async((team.id, member.id))
+        data = self.prepare_email(team.id, member.id)
+        # todo delete
+        send_mail(from_email=settings.DEFAULT_FROM_EMAIL, **data)
+        # send_email.delay(**data)
 
         return validated_data
+
+    def prepare_email(self, team_id, user_id):
+        team = Team.objects.get(pk=team_id)
+        user = User.objects.get(pk=user_id)
+        return {
+            'subject': 'Invitation to team!',
+            'message': f"""
+            Hello {user.get_full_name()}.
+            You have invited to team - {team.name}
+            """,
+            'recipient_list': [user.email]
+        }
 
 
 class RemoveTeamMemberSerializer(serializers.Serializer):
@@ -74,6 +92,21 @@ class RemoveTeamMemberSerializer(serializers.Serializer):
         member = validated_data.get('member')
         team.users.remove(member)
 
-        send_remove_email.delay(team.id, member.id)
+        data = self.prepare_email(team.id, member.id)
+        # todo delete
+        send_mail(from_email=settings.DEFAULT_FROM_EMAIL, **data)
+        # send_email.delay(**data)
 
         return validated_data
+
+    def prepare_email(self, team_id, user_id):
+        team = Team.objects.get(pk=team_id)
+        user = User.objects.get(pk=user_id)
+        return {
+            'subject': 'Remove from team!',
+            'message': f"""
+            Hello {user.get_full_name()}.
+            You have removed from team - {team.name}.
+            """,
+            'recipient_list': [user.email]
+        }

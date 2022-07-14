@@ -12,7 +12,8 @@ class Request(BaseModel):
                                    null=True)
     start_date = models.DateField()
     end_date = models.DateField()
-    description = models.CharField(max_length=255, default=None, blank=True, null=True)
+    description = models.CharField(max_length=255, blank=True, null=True)
+    approve_count = models.SmallIntegerField(default=0, blank=True, editable=False)
 
     class Meta:
         verbose_name = 'Request'

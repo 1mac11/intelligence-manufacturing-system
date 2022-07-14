@@ -24,6 +24,7 @@ class Migration(migrations.Migration):
                 ('status', models.ForeignKey(blank=True, null=True, on_delete=models.SET_NULL, related_name='requests', to='core.requeststatus')),
                 ('type', models.ForeignKey(blank=True, null=True, on_delete=models.SET_NULL, related_name='requests', to='core.requesttype')),
                 ('description', models.CharField(blank=True, max_length=255, null=True)),
+                ('approve_count', models.SmallIntegerField(default=0, blank=True, editable=False))
             ],
             options={
                 'verbose_name': 'Request',

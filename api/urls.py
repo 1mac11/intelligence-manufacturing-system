@@ -19,6 +19,7 @@ router.register('users', views.UserViewSet)
 router.register('teams', views.TeamViewSet)
 router.register('request_types', views.RequestTypeViewSet)
 router.register('request_statuses', views.RequestStatusViewSet)
+router.register('requests', views.RequestViewSet)
 
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register-user'),
