@@ -25,14 +25,13 @@ class RequestViewSet(ModelViewSet):
         obj = self.get_object()
         query_params = request.query_params
 
-        if obj.unique_code != query_params.get('code') or obj.status == RequestStatusChoices.DENY:
+        if any([obj.unique_code != query_params.get('code'), obj.status == RequestStatusChoices.DENY, obj.approves.get(query_params.get('user_type'))]):
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
-        obj.approve_count += 1
-        if obj.approve_count == 2:
-            obj.status = RequestStatusChoices.APPROVE
-
-        obj.save(update_fields=['approve_count', 'status'])
+        obj.approves[query_params.get('user_type')] = True
+        if len(obj.approves) == 2:
+            obj.status = RequestStatus.objects.get(name=RequestStatusChoices.APPROVE)
+        obj.save(update_fields=['approves', 'status'])
 
         return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -41,10 +40,11 @@ class RequestViewSet(ModelViewSet):
         obj = self.get_object()
         query_params = request.query_params
 
-        if obj.unique_code != query_params.get('code'):
+        if any([obj.unique_code != query_params.get('code'), obj.status == RequestStatusChoices.APPROVE, obj.approves.get(query_params.get('user_type'))]):
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
-        obj.approve_count = 0
-        obj.status = RequestStatusChoices.DENY
-        obj.save(update_fields=['approve_count', 'status'])
+        obj.approves[query_params.get('user_type')] = False
+        obj.status = RequestStatus.objects.get(name=RequestStatusChoices.DENY)
+        obj.save(update_fields=['approves', 'status'])
+
         return Response(status=status.HTTP_204_NO_CONTENT)
