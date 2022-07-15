@@ -6,6 +6,7 @@ from django.conf import settings
 
 from .models import Request, User
 from .models.user_type import UserTypeChoices
+from .tasks import send_email
 
 
 @receiver(post_save, sender=Request)
@@ -29,5 +30,10 @@ def send_request_email(sender, instance, **kwargs):
                            f"?code={instance.unique_code}&user_type={recipient.detail.type.name}"
 
         message = render_to_string('request.html', data)
-
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [recipient.email], html_message=message)
+        context = {
+            'subject': subject,
+            'message': 'Message from signal',
+            'recipient_list': ['bekturdiyevzarif@gmail.com'],
+            'html_message': message
+        }
+        send_email.delay(**context)

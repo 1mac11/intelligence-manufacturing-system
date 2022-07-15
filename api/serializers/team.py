@@ -55,9 +55,8 @@ class AddTeamMemberSerializer(serializers.Serializer):
         team.users.add(member)
 
         data = self.prepare_email(team.id, member.id)
-        # todo delete
-        send_mail(from_email=settings.DEFAULT_FROM_EMAIL, **data)
-        # send_email.delay(**data)
+
+        send_email.delay(**data)
 
         return validated_data
 
@@ -93,9 +92,8 @@ class RemoveTeamMemberSerializer(serializers.Serializer):
         team.users.remove(member)
 
         data = self.prepare_email(team.id, member.id)
-        # todo delete
-        send_mail(from_email=settings.DEFAULT_FROM_EMAIL, **data)
-        # send_email.delay(**data)
+
+        send_email.delay(**data)
 
         return validated_data
 
