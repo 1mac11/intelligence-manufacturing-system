@@ -1,5 +1,3 @@
-import datetime
-
 from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.template.loader import render_to_string
@@ -31,11 +29,10 @@ def send_request_email(sender, instance, **kwargs):
                            f"?code={instance.unique_code}&user_type={recipient.detail.type.name}"
 
         message = render_to_string('request.html', data)
-        start = datetime.datetime.now()
-        send_email.apply_async(
-            subject=subject,
-            message=message,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[recipient.email],
-            html_message=message
-        )
+        context = {
+            'subject': subject,
+            'message': 'Message from signal',
+            'recipient_list': ['bekturdiyevzarif@gmail.com'],
+            'html_message': message
+        }
+        send_email.delay(**context)
