@@ -39,9 +39,12 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 # User serializer
 class UserSerializer(serializers.ModelSerializer):
+    role_id = serializers.IntegerField(write_only=True)
+    role = serializers.CharField(read_only=True, source='role.name')
+
     class Meta:
         model = User
-        fields = ('id', 'last_name', 'first_name', 'email', 'role')
+        fields = ('id', 'last_name', 'first_name', 'email', 'role_id', 'role')
 
 
 class AccessTokenSerializer(TokenObtainPairSerializer):

@@ -20,6 +20,7 @@ djangorestframework-simplejwt = "5.2.0"
 django-countries = "7.3.2"
 oauthlib = "3.2.0"
 psycopg2-binary = "==2.9.3"
+django-model-utils = '4.2.0'
 
 [dev-packages]
 pytest = "6.2.5"

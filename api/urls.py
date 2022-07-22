@@ -26,7 +26,7 @@ urlpatterns = [
     # Uncomment if you want to check token to HMAC
     # path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
-    path('logout/', LogoutView.as_view(), name='register-user'),
+    path('logout/', LogoutView.as_view(), name='logout-user'),
 
 ]
 

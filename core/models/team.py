@@ -1,4 +1,5 @@
 from django.db import models
+from model_utils import FieldTracker
 
 from core.models import BaseModel
 
@@ -11,6 +12,7 @@ class Team(BaseModel):
                                      null=True)
     building = models.ForeignKey('core.Building', on_delete=models.SET_NULL, related_name='teams', blank=True,
                                  null=True)
+    tracker = FieldTracker()
 
     def __str__(self):
         return self.name
