@@ -12,3 +12,6 @@ from .user import User
 from .user_type import UserType
 from .user_detail import UserDetail
 from .team import Team
+from .request_status import RequestStatus
+from .request_type import RequestType
+from .request import Request
