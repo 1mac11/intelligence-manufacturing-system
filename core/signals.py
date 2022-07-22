@@ -1,4 +1,5 @@
-from django.core.mail import send_mail
+import datetime
+
 from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.template.loader import render_to_string
@@ -6,6 +7,7 @@ from django.conf import settings
 
 from .models import Request, User
 from .models.user_type import UserTypeChoices
+from .tasks import send_email
 
 
 @receiver(post_save, sender=Request)
@@ -29,5 +31,11 @@ def send_request_email(sender, instance, **kwargs):
                            f"?code={instance.unique_code}&user_type={recipient.detail.type.name}"
 
         message = render_to_string('request.html', data)
-
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [recipient.email], html_message=message)
+        start = datetime.datetime.now()
+        send_email.apply_async(
+            subject=subject,
+            message=message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[recipient.email],
+            html_message=message
+        )
