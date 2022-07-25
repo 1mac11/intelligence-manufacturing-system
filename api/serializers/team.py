@@ -1,7 +1,9 @@
 from django.db.transaction import atomic
+
 from rest_framework import serializers
 
 from api.serializers import BaseModelSerializer
+from core.emails.team_email import TeamEmail
 from core.models import Team, User
 from core.models.user_type import UserTypeChoices
 from core.utils.checkers import (
@@ -11,7 +13,6 @@ from core.utils.checkers import (
     check_add_team_supervisor,
     check_add_team_manager,
 )
-from core.tasks import send_invitation_email, send_remove_email
 
 
 class TeamSerializer(BaseModelSerializer):
@@ -51,7 +52,8 @@ class AddTeamMemberSerializer(serializers.Serializer):
         member = validated_data.get('member')
         team.users.add(member)
 
-        send_invitation_email.apply_async((team.id, member.id))
+        team_email = TeamEmail(team, member)
+        team_email.send_add_notification()
 
         return validated_data
 
@@ -74,6 +76,7 @@ class RemoveTeamMemberSerializer(serializers.Serializer):
         member = validated_data.get('member')
         team.users.remove(member)
 
-        send_remove_email.delay(team.id, member.id)
+        team_email = TeamEmail(team, member)
+        team_email.send_remove_notification()
 
         return validated_data
