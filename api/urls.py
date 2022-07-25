@@ -17,6 +17,9 @@ router.register('machine_tools', views.MachineToolViewSet)
 router.register('machine_tool_types', views.MachineToolTypeViewSet)
 router.register('users', views.UserViewSet)
 router.register('teams', views.TeamViewSet)
+router.register('request_types', views.RequestTypeViewSet)
+router.register('request_statuses', views.RequestStatusViewSet)
+router.register('requests', views.RequestViewSet)
 
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register-user'),
@@ -26,7 +29,7 @@ urlpatterns = [
     # Uncomment if you want to check token to HMAC
     # path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
-    path('logout/', LogoutView.as_view(), name='register-user'),
+    path('logout/', LogoutView.as_view(), name='logout-user'),
 
 ]
 
