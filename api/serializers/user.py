@@ -48,6 +48,9 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class AccessTokenSerializer(TokenObtainPairSerializer):
+    access = serializers.CharField(max_length=255, read_only=True)
+    refresh = serializers.CharField(max_length=255, read_only=True)
+
     def validate(self, attrs):
         email = attrs.get('email')
         user = User.objects.filter(email=email)
