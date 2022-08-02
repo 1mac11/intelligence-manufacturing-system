@@ -1,1 +1,6321 @@
-{}
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2022-07-15T06:21:45.803Z",
+      "user": 52,
+      "content_type": 19,
+      "object_id": "51",
+      "object_repr": "bekturdiyevzarif@gmail.com",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2022-07-15T06:22:02.185Z",
+      "user": 52,
+      "content_type": 19,
+      "object_id": "51",
+      "object_repr": "bekturdiyevzarif@gmail.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Type\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2022-07-15T06:27:01.281Z",
+      "user": 52,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "approve",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2022-07-15T06:27:06.019Z",
+      "user": 52,
+      "content_type": 21,
+      "object_id": "2",
+      "object_repr": "deny",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2022-07-15T06:27:10.249Z",
+      "user": 52,
+      "content_type": 21,
+      "object_id": "3",
+      "object_repr": "pending",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2022-07-15T06:27:16.746Z",
+      "user": 52,
+      "content_type": 22,
+      "object_id": "1",
+      "object_repr": "sick_day",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2022-07-15T06:27:21.184Z",
+      "user": 52,
+      "content_type": 22,
+      "object_id": "2",
+      "object_repr": "vacation",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2022-07-15T06:27:25.175Z",
+      "user": 52,
+      "content_type": 22,
+      "object_id": "3",
+      "object_repr": "day_off",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add blacklisted token",
+      "content_type": 6,
+      "codename": "add_blacklistedtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change blacklisted token",
+      "content_type": 6,
+      "codename": "change_blacklistedtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete blacklisted token",
+      "content_type": 6,
+      "codename": "delete_blacklistedtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view blacklisted token",
+      "content_type": 6,
+      "codename": "view_blacklistedtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add outstanding token",
+      "content_type": 7,
+      "codename": "add_outstandingtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change outstanding token",
+      "content_type": 7,
+      "codename": "change_outstandingtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete outstanding token",
+      "content_type": 7,
+      "codename": "delete_outstandingtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view outstanding token",
+      "content_type": 7,
+      "codename": "view_outstandingtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add status",
+      "content_type": 8,
+      "codename": "add_status"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change status",
+      "content_type": 8,
+      "codename": "change_status"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete status",
+      "content_type": 8,
+      "codename": "delete_status"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view status",
+      "content_type": 8,
+      "codename": "view_status"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add machine tool type",
+      "content_type": 9,
+      "codename": "add_machinetooltype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change machine tool type",
+      "content_type": 9,
+      "codename": "change_machinetooltype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete machine tool type",
+      "content_type": 9,
+      "codename": "delete_machinetooltype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view machine tool type",
+      "content_type": 9,
+      "codename": "view_machinetooltype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add territory",
+      "content_type": 10,
+      "codename": "add_territory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change territory",
+      "content_type": 10,
+      "codename": "change_territory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete territory",
+      "content_type": 10,
+      "codename": "delete_territory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view territory",
+      "content_type": 10,
+      "codename": "view_territory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add factory type",
+      "content_type": 11,
+      "codename": "add_factorytype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change factory type",
+      "content_type": 11,
+      "codename": "change_factorytype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete factory type",
+      "content_type": 11,
+      "codename": "delete_factorytype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view factory type",
+      "content_type": 11,
+      "codename": "view_factorytype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add factory",
+      "content_type": 12,
+      "codename": "add_factory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change factory",
+      "content_type": 12,
+      "codename": "change_factory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete factory",
+      "content_type": 12,
+      "codename": "delete_factory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view factory",
+      "content_type": 12,
+      "codename": "view_factory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add building type",
+      "content_type": 13,
+      "codename": "add_buildingtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change building type",
+      "content_type": 13,
+      "codename": "change_buildingtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete building type",
+      "content_type": 13,
+      "codename": "delete_buildingtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view building type",
+      "content_type": 13,
+      "codename": "view_buildingtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add building",
+      "content_type": 14,
+      "codename": "add_building"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change building",
+      "content_type": 14,
+      "codename": "change_building"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete building",
+      "content_type": 14,
+      "codename": "delete_building"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view building",
+      "content_type": 14,
+      "codename": "view_building"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add machine tool",
+      "content_type": 15,
+      "codename": "add_machinetool"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change machine tool",
+      "content_type": 15,
+      "codename": "change_machinetool"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete machine tool",
+      "content_type": 15,
+      "codename": "delete_machinetool"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view machine tool",
+      "content_type": 15,
+      "codename": "view_machinetool"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add building type",
+      "content_type": 16,
+      "codename": "add_usertype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change building type",
+      "content_type": 16,
+      "codename": "change_usertype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete building type",
+      "content_type": 16,
+      "codename": "delete_usertype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view building type",
+      "content_type": 16,
+      "codename": "view_usertype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add user role",
+      "content_type": 17,
+      "codename": "add_userrole"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change user role",
+      "content_type": 17,
+      "codename": "change_userrole"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete user role",
+      "content_type": 17,
+      "codename": "delete_userrole"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view user role",
+      "content_type": 17,
+      "codename": "view_userrole"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 18,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 18,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 18,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 18,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add user detail",
+      "content_type": 19,
+      "codename": "add_userdetail"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change user detail",
+      "content_type": 19,
+      "codename": "change_userdetail"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete user detail",
+      "content_type": 19,
+      "codename": "delete_userdetail"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view user detail",
+      "content_type": 19,
+      "codename": "view_userdetail"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add team",
+      "content_type": 20,
+      "codename": "add_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change team",
+      "content_type": 20,
+      "codename": "change_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete team",
+      "content_type": 20,
+      "codename": "delete_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view team",
+      "content_type": 20,
+      "codename": "view_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add Request status",
+      "content_type": 21,
+      "codename": "add_requeststatus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change Request status",
+      "content_type": 21,
+      "codename": "change_requeststatus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete Request status",
+      "content_type": 21,
+      "codename": "delete_requeststatus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view Request status",
+      "content_type": 21,
+      "codename": "view_requeststatus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add Request type",
+      "content_type": 22,
+      "codename": "add_requesttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change Request type",
+      "content_type": 22,
+      "codename": "change_requesttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete Request type",
+      "content_type": 22,
+      "codename": "delete_requesttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view Request type",
+      "content_type": 22,
+      "codename": "view_requesttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add Request",
+      "content_type": 23,
+      "codename": "add_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change Request",
+      "content_type": 23,
+      "codename": "change_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete Request",
+      "content_type": 23,
+      "codename": "delete_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view Request",
+      "content_type": 23,
+      "codename": "view_request"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "token_blacklist",
+      "model": "blacklistedtoken"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "token_blacklist",
+      "model": "outstandingtoken"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "core",
+      "model": "status"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "core",
+      "model": "machinetooltype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "core",
+      "model": "territory"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "core",
+      "model": "factorytype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "core",
+      "model": "factory"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "core",
+      "model": "buildingtype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "core",
+      "model": "building"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "core",
+      "model": "machinetool"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "core",
+      "model": "usertype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "core",
+      "model": "userrole"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "core",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "core",
+      "model": "userdetail"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "core",
+      "model": "team"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "core",
+      "model": "requeststatus"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "core",
+      "model": "requesttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "core",
+      "model": "request"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3txawh7i9q1wr2z471n3z54y8wvk6rhw",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO167VxADlSnFSIu0OkFNC-mXkvlmBbW9pGWdJE7MysYqffESE_St8J3aHfZp7nvi4T8l3hBx38OlN5Xg7376DBaN9aCO2NVoYk-oA6lCA1kCxVOqWqzRGKgIpgrQ7OgScSISqvjCW0IVb2_gDwwzep:1oCEgl:bZlv7q3OBjDhdyyMpnCrHd_EeiDR4kr-yLqmt36XetI",
+      "expire_date": "2022-07-29T06:20:35.234Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 1,
+    "fields": {
+      "user": 54,
+      "jti": "d6b5b754502240ebaf282c1407898878",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MTg0Mzg1MCwiaWF0IjoxNjU5MzM4MjUwLCJqdGkiOiJkNmI1Yjc1NDUwMjI0MGViYWYyODJjMTQwNzg5ODg3OCIsInVzZXJfaWQiOjU0fQ._dejz5SKkqT10JeKkYhKj_llCEn2oMtKFEFm3tctzaE",
+      "created_at": "2022-08-01T07:17:30.445Z",
+      "expires_at": "2022-08-30T07:17:30Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 2,
+    "fields": {
+      "user": 54,
+      "jti": "58b99714ce36485fb22122b84532c96e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MTg0NDA1MiwiaWF0IjoxNjU5MzM4NDUyLCJqdGkiOiI1OGI5OTcxNGNlMzY0ODVmYjIyMTIyYjg0NTMyYzk2ZSIsInVzZXJfaWQiOjU0fQ.Xya4XOE36P5xVfTvouU3eX8TN3vm6kFCkAyOQoBkPco",
+      "created_at": "2022-08-01T07:20:52.587Z",
+      "expires_at": "2022-08-30T07:20:52Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 3,
+    "fields": {
+      "user": 54,
+      "jti": "df210a8dac2a483e848783e20b26761a",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MTg0NDA4NiwiaWF0IjoxNjU5MzM4NDg2LCJqdGkiOiJkZjIxMGE4ZGFjMmE0ODNlODQ4NzgzZTIwYjI2NzYxYSIsInVzZXJfaWQiOjU0fQ.wGgW7P5uEinMwGkvOSwtnLHaK_EFk3KjVrdo7I5KDgM",
+      "created_at": "2022-08-01T07:21:26.204Z",
+      "expires_at": "2022-08-30T07:21:26Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 4,
+    "fields": {
+      "user": 54,
+      "jti": "87e88954536840348375daa8751abb84",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MTg0NDExMSwiaWF0IjoxNjU5MzM4NTExLCJqdGkiOiI4N2U4ODk1NDUzNjg0MDM0ODM3NWRhYTg3NTFhYmI4NCIsInVzZXJfaWQiOjU0fQ.Hu41vebKYceasVbC3DimsXcNk4Zy9adNX7YR2iNnQMM",
+      "created_at": "2022-08-01T07:21:51.674Z",
+      "expires_at": "2022-08-30T07:21:51Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 5,
+    "fields": {
+      "user": 54,
+      "jti": "5a85f4b7d1da49779c31bd08b82b5675",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MTg0NDE2NywiaWF0IjoxNjU5MzM4NTY3LCJqdGkiOiI1YTg1ZjRiN2QxZGE0OTc3OWMzMWJkMDhiODJiNTY3NSIsInVzZXJfaWQiOjU0fQ.jHoI-2_M-FnDcvI7xkHmD3KnxgIQU7Pvo9CUf8tlSPI",
+      "created_at": "2022-08-01T07:22:47.642Z",
+      "expires_at": "2022-08-30T07:22:47Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 6,
+    "fields": {
+      "user": 55,
+      "jti": "730744dc036845f296cee5583574b820",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MTg0NDg5MywiaWF0IjoxNjU5MzM5MjkzLCJqdGkiOiI3MzA3NDRkYzAzNjg0NWYyOTZjZWU1NTgzNTc0YjgyMCIsInVzZXJfaWQiOjU1fQ.6jlUv_s1aIw6SseM9g3fGGEFKD7BQ058oRIZOZKga9c",
+      "created_at": "2022-08-01T07:34:53.100Z",
+      "expires_at": "2022-08-30T07:34:53Z"
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3wL27ChY5QAISBEG",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Eqmtrpjxrr",
+      "address": "Address_Atwtmmsslu",
+      "area": 829.9609714185789,
+      "country": "GA",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "hJHoRLcE4dESmEmP",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Qsavxrfnqv",
+      "address": "Address_Omdqyuylgx",
+      "area": 536.6509710918542,
+      "country": "CL",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "a4NUJESr1qTLxMgP",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Izunnqbfip",
+      "address": "Address_Bcumfcyzvz",
+      "area": 94.8389393272448,
+      "country": "DK",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "2pWbYeaYIccFecvP",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Fveoplvivw",
+      "address": "Address_Ekcgstecjr",
+      "area": 228.89109483811302,
+      "country": "TR",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "qC4DmgYLTafWFZho",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Bpenwnyxvu",
+      "address": "Address_Wsyyryuvpl",
+      "area": 604.1722583781099,
+      "country": "NG",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 6,
+    "fields": {
+      "deleted": false,
+      "unique_code": "9jepieerzEEiocdZ",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Anxlhqqddu",
+      "address": "Address_Fpbxtkfizh",
+      "area": 878.41128376764,
+      "country": "FI",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 7,
+    "fields": {
+      "deleted": false,
+      "unique_code": "32f78Can2qcjeE23",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Qsltgnhfag",
+      "address": "Address_Cmymptmxtb",
+      "area": 882.4282209477418,
+      "country": "EE",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 8,
+    "fields": {
+      "deleted": false,
+      "unique_code": "rVlc1tcYmbZQyMln",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Sbhthvizfj",
+      "address": "Address_Kncsguibzr",
+      "area": 966.4614450528545,
+      "country": "SK",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 9,
+    "fields": {
+      "deleted": false,
+      "unique_code": "M2jvTBgqyg8TVOls",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Tivvoefugc",
+      "address": "Address_Pvoklkobfi",
+      "area": 278.90314113819176,
+      "country": "BR",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 10,
+    "fields": {
+      "deleted": false,
+      "unique_code": "zEqKNkPquuMeQZWc",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Zcqzdxerwk",
+      "address": "Address_Sdnykvyqcw",
+      "area": 791.5974897523724,
+      "country": "SV",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 11,
+    "fields": {
+      "deleted": false,
+      "unique_code": "xAgxJtQs1ja5MuVq",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Jkzbpsuxnl",
+      "address": "Address_Lhqhwimxzu",
+      "area": 174.95240667573893,
+      "country": "GQ",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 12,
+    "fields": {
+      "deleted": false,
+      "unique_code": "OdJYVGUvFxu0u8ND",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Xwrzzufpdb",
+      "address": "Address_Xivrdsanvh",
+      "area": 213.212220990817,
+      "country": "SN",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 13,
+    "fields": {
+      "deleted": false,
+      "unique_code": "6HJtmzFdnk553onz",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Efmiejikzm",
+      "address": "Address_Oeielvwqnm",
+      "area": 127.57940296029605,
+      "country": "GI",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 14,
+    "fields": {
+      "deleted": false,
+      "unique_code": "23Aog6eCXDTejVL0",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Nxgtwldlyd",
+      "address": "Address_Beknxqqgsj",
+      "area": 950.6741925321469,
+      "country": "IM",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 15,
+    "fields": {
+      "deleted": false,
+      "unique_code": "FS9f9tAK1yd0wQJb",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Tshdspgnuj",
+      "address": "Address_Xfgkmvdmdr",
+      "area": 335.2458206875023,
+      "country": "BE",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 16,
+    "fields": {
+      "deleted": false,
+      "unique_code": "NqyzI48CF1cUnIIE",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Vjuwmrnuyn",
+      "address": "Address_Pckyntswtw",
+      "area": 423.04166323389944,
+      "country": "AW",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 17,
+    "fields": {
+      "deleted": false,
+      "unique_code": "SXpLuquVVzzzmIlN",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Shabcmjvoz",
+      "address": "Address_Tdjtzajztn",
+      "area": 638.773127076207,
+      "country": "IO",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 18,
+    "fields": {
+      "deleted": false,
+      "unique_code": "dC6Sr1N3htISrf36",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Hnxeejovvw",
+      "address": "Address_Mkylfnafyr",
+      "area": 428.00395937208833,
+      "country": "DM",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 19,
+    "fields": {
+      "deleted": false,
+      "unique_code": "O7B1uqsCF1zz8El2",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Ycjtpyymum",
+      "address": "Address_Tsgwqewgtf",
+      "area": 227.91644791357416,
+      "country": "LU",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 20,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Rt00vrPbDw9TeoF2",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Dzmlcvsqpo",
+      "address": "Address_Pqsuiwalam",
+      "area": 577.4300954529996,
+      "country": "UG",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 21,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ek0zVZbQR8plZKdO",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Waajmjxcxy",
+      "address": "Address_Oyvdbtgjnk",
+      "area": 874.7705701991298,
+      "country": "BD",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 22,
+    "fields": {
+      "deleted": false,
+      "unique_code": "vJuy4PeQU760bgjo",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Mcvjzlutqg",
+      "address": "Address_Xaxfnrepdq",
+      "area": 85.26908205609445,
+      "country": "SV",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 23,
+    "fields": {
+      "deleted": false,
+      "unique_code": "0h6IQmPp7keTrBlZ",
+      "created_at": "2022-07-02T10:08:27.063Z",
+      "updated_at": "2022-07-02T10:08:27.063Z",
+      "name": "Territory_Shjzvyhacu",
+      "address": "Address_Hrxowqxidq",
+      "area": 464.64587656898107,
+      "country": "IR",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 24,
+    "fields": {
+      "deleted": false,
+      "unique_code": "J6pXZJHqtuGBACpp",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Lonwxeaasr",
+      "address": "Address_Byjgxcegiu",
+      "area": 269.1632605979828,
+      "country": "ID",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 25,
+    "fields": {
+      "deleted": false,
+      "unique_code": "pCMvte7bpE4GZ3Q6",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Qmaamhbivs",
+      "address": "Address_Xrtscmbmyf",
+      "area": 143.02863048707854,
+      "country": "AE",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 26,
+    "fields": {
+      "deleted": false,
+      "unique_code": "sHoNKd77c1nWnJGZ",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Sfeuocswoy",
+      "address": "Address_Cygmwfupnq",
+      "area": 359.3026047260589,
+      "country": "MY",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 27,
+    "fields": {
+      "deleted": false,
+      "unique_code": "TkSv8dDp6tUq2fMK",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Ccxctgigic",
+      "address": "Address_Mdlznxwqnb",
+      "area": 588.8797277069618,
+      "country": "BN",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 28,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3xae6wtaUvfJ0hxY",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Jrezihlpsn",
+      "address": "Address_Rkrtprsrww",
+      "area": 855.4739027324871,
+      "country": "CG",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 29,
+    "fields": {
+      "deleted": false,
+      "unique_code": "NzUtRjjFE0rXdjL4",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Ldrpkjomgw",
+      "address": "Address_Clxswoxfda",
+      "area": 792.1829697899219,
+      "country": "BB",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 30,
+    "fields": {
+      "deleted": false,
+      "unique_code": "zL6SVVBF5l6lVNto",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Xfqkuvldhs",
+      "address": "Address_Lzhfyompzj",
+      "area": 359.6940862562325,
+      "country": "NC",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 31,
+    "fields": {
+      "deleted": false,
+      "unique_code": "4xPIPjOQTXjY40h7",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Zijomfaron",
+      "address": "Address_Kbfidnzeyc",
+      "area": 282.3934904752813,
+      "country": "PT",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 32,
+    "fields": {
+      "deleted": false,
+      "unique_code": "honKF3hDG8JmYs2W",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Sevjeoccgp",
+      "address": "Address_Pjttcdmpiw",
+      "area": 317.5536539683669,
+      "country": "LK",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 33,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Ze8trcveDJ77Mhwg",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Kkiopizzgk",
+      "address": "Address_Biimvgvwoi",
+      "area": 315.522934284714,
+      "country": "RW",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 34,
+    "fields": {
+      "deleted": false,
+      "unique_code": "tv9NHOLl7Ky2KeKz",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Drbzlwnmbt",
+      "address": "Address_Wcfgfgvlpk",
+      "area": 980.5061009604266,
+      "country": "TR",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 35,
+    "fields": {
+      "deleted": false,
+      "unique_code": "lvBSmlEPJihvzDIQ",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Igbsukwdvs",
+      "address": "Address_Ireajindgq",
+      "area": 91.87684485736148,
+      "country": "MQ",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 36,
+    "fields": {
+      "deleted": false,
+      "unique_code": "odalA705bzeCwfXS",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Vftrihjsra",
+      "address": "Address_Jpinpqhaif",
+      "area": 813.0869436729743,
+      "country": "BB",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 37,
+    "fields": {
+      "deleted": false,
+      "unique_code": "WFdTnjtSoDHlb8o4",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Msxsfvbjlw",
+      "address": "Address_Hgirtgeiom",
+      "area": 586.5253824746788,
+      "country": "HU",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 38,
+    "fields": {
+      "deleted": false,
+      "unique_code": "qoW2t9AFQC5Qn2eH",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Zustkdqpyv",
+      "address": "Address_Khwejyrtrc",
+      "area": 650.5495090193117,
+      "country": "RE",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 39,
+    "fields": {
+      "deleted": false,
+      "unique_code": "YDqDLgMohnhesmPe",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Bkgfhrczgw",
+      "address": "Address_Rdqezviqrg",
+      "area": 541.4368082649594,
+      "country": "SO",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 40,
+    "fields": {
+      "deleted": false,
+      "unique_code": "54C4fnXu7uegAKs8",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Atwjpaydzr",
+      "address": "Address_Qtcswboiam",
+      "area": 907.4469703630534,
+      "country": "KE",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 41,
+    "fields": {
+      "deleted": false,
+      "unique_code": "k2Bnheos8xqcN5HY",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Tmwehwhycw",
+      "address": "Address_Pimmavaisk",
+      "area": 943.242922210327,
+      "country": "KY",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 42,
+    "fields": {
+      "deleted": false,
+      "unique_code": "fTKX8WIHSyzqlKn7",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Haivpbdgia",
+      "address": "Address_Kwijlegnsf",
+      "area": 127.18679118964067,
+      "country": "BS",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 43,
+    "fields": {
+      "deleted": false,
+      "unique_code": "NDPU0Nv0e4At6x7s",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Myzrouflca",
+      "address": "Address_Hqoavszrtr",
+      "area": 889.1225119597412,
+      "country": "BN",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 44,
+    "fields": {
+      "deleted": false,
+      "unique_code": "lD7a8cRk1j5ist1f",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Hmwpkiguyk",
+      "address": "Address_Hvzyuicwom",
+      "area": 924.2431561345524,
+      "country": "AD",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 45,
+    "fields": {
+      "deleted": false,
+      "unique_code": "sWA8tnlMgxzd8UOb",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Jrgvnjedaz",
+      "address": "Address_Fqdskyiltb",
+      "area": 586.1129098133613,
+      "country": "AM",
+      "status": 3
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 46,
+    "fields": {
+      "deleted": false,
+      "unique_code": "7H9ERuMGpq18kxfM",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Zvlcfwnnuf",
+      "address": "Address_Fwbmecdyum",
+      "area": 327.26298073002386,
+      "country": "ME",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 47,
+    "fields": {
+      "deleted": false,
+      "unique_code": "RpQZ1n00mevVJKCd",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Jhgpckosjg",
+      "address": "Address_Ixfvknjvdl",
+      "area": 546.3891735843569,
+      "country": "BE",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 48,
+    "fields": {
+      "deleted": false,
+      "unique_code": "JkrdtyZYQG82b9oi",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Adhknnltan",
+      "address": "Address_Kvrrluvidj",
+      "area": 386.8058118605012,
+      "country": "EC",
+      "status": 2
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 49,
+    "fields": {
+      "deleted": false,
+      "unique_code": "uAUp8SymuMLGHmj6",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Dpxqxylmyb",
+      "address": "Address_Dclmfauhzm",
+      "area": 150.57254280850464,
+      "country": "LR",
+      "status": 4
+    }
+  },
+  {
+    "model": "core.territory",
+    "pk": 50,
+    "fields": {
+      "deleted": false,
+      "unique_code": "tjZwwMEpfJHt65MM",
+      "created_at": "2022-07-02T10:08:27.064Z",
+      "updated_at": "2022-07-02T10:08:27.064Z",
+      "name": "Territory_Xqigmwbfah",
+      "address": "Address_Tyawyfyvma",
+      "area": 672.9871288543272,
+      "country": "IS",
+      "status": 1
+    }
+  },
+  {
+    "model": "core.status",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "i78wX3YJWbAefqb6",
+      "created_at": "2022-07-02T10:08:18.734Z",
+      "updated_at": "2022-07-02T10:08:18.734Z",
+      "name": "working"
+    }
+  },
+  {
+    "model": "core.status",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mIebXhQM1qziGX43",
+      "created_at": "2022-07-02T10:08:18.734Z",
+      "updated_at": "2022-07-02T10:08:18.734Z",
+      "name": "stopped"
+    }
+  },
+  {
+    "model": "core.status",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3VV2EfFLsmxEQNps",
+      "created_at": "2022-07-02T10:08:18.734Z",
+      "updated_at": "2022-07-02T10:08:18.734Z",
+      "name": "pending"
+    }
+  },
+  {
+    "model": "core.status",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "iUTjbTTKMZIoS4rH",
+      "created_at": "2022-07-02T10:08:18.734Z",
+      "updated_at": "2022-07-02T10:08:18.734Z",
+      "name": "repairing"
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "KB8iDxvc9FUz0xGx",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.077Z",
+      "name": "Factory_Nzqdqiarjx",
+      "type": 1,
+      "status": 4,
+      "territory": 37
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "lz4SoIIrvVkBvYHc",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.077Z",
+      "name": "Factory_Miiisfiomh",
+      "type": 4,
+      "status": 1,
+      "territory": 20
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "HZOCtijnuKWBoV5m",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.077Z",
+      "name": "Factory_Gizfrlhdas",
+      "type": 1,
+      "status": 4,
+      "territory": 49
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "LFtvp3o2Bya0jMAH",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.077Z",
+      "name": "Factory_Gvhjgmfllu",
+      "type": 3,
+      "status": 2,
+      "territory": 48
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "nCT00d9FgWpjyoSD",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.077Z",
+      "name": "Factory_Fqqfnjhyhw",
+      "type": 1,
+      "status": 2,
+      "territory": 28
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 6,
+    "fields": {
+      "deleted": false,
+      "unique_code": "DAaK2r9I32ooxVuG",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.077Z",
+      "name": "Factory_Dvcnupxaaz",
+      "type": 4,
+      "status": 1,
+      "territory": 19
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 7,
+    "fields": {
+      "deleted": false,
+      "unique_code": "8LV31IsKcGylbo08",
+      "created_at": "2022-07-02T10:08:27.077Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Qhlxncmwia",
+      "type": 2,
+      "status": 1,
+      "territory": 48
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 8,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mlOPsDBlYqshJJeF",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zhcibeufux",
+      "type": 1,
+      "status": 4,
+      "territory": 30
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 9,
+    "fields": {
+      "deleted": false,
+      "unique_code": "8Y3iTkBzLuta6cXW",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Cjgubbuzgm",
+      "type": 1,
+      "status": 4,
+      "territory": 7
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 10,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ZLw1CfVVg2aE00qM",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zvwpnzdajh",
+      "type": 1,
+      "status": 1,
+      "territory": 49
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 11,
+    "fields": {
+      "deleted": false,
+      "unique_code": "szHFV5G7qmLCiDyS",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Ncfhdibdtn",
+      "type": 3,
+      "status": 2,
+      "territory": 44
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 12,
+    "fields": {
+      "deleted": false,
+      "unique_code": "6CMGvuvTPKisItVh",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Wpyztzizlp",
+      "type": 4,
+      "status": 1,
+      "territory": 47
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 13,
+    "fields": {
+      "deleted": false,
+      "unique_code": "NKsfAI6zdQ8L06zW",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Mzqlvbsorc",
+      "type": 2,
+      "status": 4,
+      "territory": 14
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 14,
+    "fields": {
+      "deleted": false,
+      "unique_code": "A4raSRq0pQqVXF6v",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Nxvlwtvukb",
+      "type": 3,
+      "status": 3,
+      "territory": 37
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 15,
+    "fields": {
+      "deleted": false,
+      "unique_code": "2my121CFnCjdD86h",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Hhkedlpwqa",
+      "type": 2,
+      "status": 2,
+      "territory": 29
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 16,
+    "fields": {
+      "deleted": false,
+      "unique_code": "LchhaBneyPldwgFa",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Qxiseomazj",
+      "type": 3,
+      "status": 1,
+      "territory": 32
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 17,
+    "fields": {
+      "deleted": false,
+      "unique_code": "2q8AwVPsgK7vC64f",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Wsubakwedp",
+      "type": 2,
+      "status": 1,
+      "territory": 12
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 18,
+    "fields": {
+      "deleted": false,
+      "unique_code": "q4lmrOwzPVlFuEsP",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Kpxufzybwf",
+      "type": 4,
+      "status": 3,
+      "territory": 42
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 19,
+    "fields": {
+      "deleted": false,
+      "unique_code": "c4toJUL3BPPgeswv",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Gydjhpvvtb",
+      "type": 2,
+      "status": 4,
+      "territory": 40
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 20,
+    "fields": {
+      "deleted": false,
+      "unique_code": "u5iQulkTpOJLrjxR",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Cneywfcrqo",
+      "type": 4,
+      "status": 3,
+      "territory": 2
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 21,
+    "fields": {
+      "deleted": false,
+      "unique_code": "QYzeJVSn1FmuOkhA",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Olcbascchx",
+      "type": 1,
+      "status": 1,
+      "territory": 23
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 22,
+    "fields": {
+      "deleted": false,
+      "unique_code": "SnXpEdufXiU0zARj",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Yybzjlorym",
+      "type": 2,
+      "status": 3,
+      "territory": 16
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 23,
+    "fields": {
+      "deleted": false,
+      "unique_code": "wdhOXobMdJwhPoBg",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Onhoqrlzwa",
+      "type": 1,
+      "status": 3,
+      "territory": 1
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 24,
+    "fields": {
+      "deleted": false,
+      "unique_code": "2rTR5sBFdBsOcDhl",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Tmoprxmmte",
+      "type": 2,
+      "status": 1,
+      "territory": 23
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 25,
+    "fields": {
+      "deleted": false,
+      "unique_code": "FnKhk7FmlTnDUiUs",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Cudmwilcov",
+      "type": 3,
+      "status": 3,
+      "territory": 44
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 26,
+    "fields": {
+      "deleted": false,
+      "unique_code": "EKZXbaF8GAQjyWNY",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Nyrzgxbdzh",
+      "type": 3,
+      "status": 4,
+      "territory": 36
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 27,
+    "fields": {
+      "deleted": false,
+      "unique_code": "5qZFInkCTzdB8ffT",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Jftbjcwysx",
+      "type": 3,
+      "status": 1,
+      "territory": 9
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 28,
+    "fields": {
+      "deleted": false,
+      "unique_code": "x7hsagfL2ZpwHKS2",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Riaryrrkan",
+      "type": 2,
+      "status": 2,
+      "territory": 47
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 29,
+    "fields": {
+      "deleted": false,
+      "unique_code": "f8d8EIuD4Sg1mox6",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Sgedbjvbaw",
+      "type": 1,
+      "status": 1,
+      "territory": 35
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 30,
+    "fields": {
+      "deleted": false,
+      "unique_code": "sp0s7V48c4rgqcek",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zhynzuechy",
+      "type": 2,
+      "status": 2,
+      "territory": 4
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 31,
+    "fields": {
+      "deleted": false,
+      "unique_code": "uYJmm3A3UyNtLPsc",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Qenityocnb",
+      "type": 3,
+      "status": 2,
+      "territory": 13
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 32,
+    "fields": {
+      "deleted": false,
+      "unique_code": "uLKBoIwbhtN87rf5",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zcyuzeqbtk",
+      "type": 1,
+      "status": 4,
+      "territory": 10
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 33,
+    "fields": {
+      "deleted": false,
+      "unique_code": "umKfOkuktyzEaROp",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zrwzfdrvob",
+      "type": 1,
+      "status": 4,
+      "territory": 21
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 34,
+    "fields": {
+      "deleted": false,
+      "unique_code": "5JUyQpDqxIIh61Lp",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Gzgiinxfkm",
+      "type": 1,
+      "status": 4,
+      "territory": 12
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 35,
+    "fields": {
+      "deleted": false,
+      "unique_code": "wsGhqUUtzeZm4V48",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Kirlehoysq",
+      "type": 4,
+      "status": 4,
+      "territory": 49
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 36,
+    "fields": {
+      "deleted": false,
+      "unique_code": "w66bFrxGffs1eJNq",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Hhgcprqrcm",
+      "type": 2,
+      "status": 3,
+      "territory": 50
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 37,
+    "fields": {
+      "deleted": false,
+      "unique_code": "nicYNfG4dJhT3h1W",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Sfpyrgahdh",
+      "type": 1,
+      "status": 3,
+      "territory": 28
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 38,
+    "fields": {
+      "deleted": false,
+      "unique_code": "zRQRXIrmmjogrZ92",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Lddedlnbag",
+      "type": 3,
+      "status": 4,
+      "territory": 31
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 39,
+    "fields": {
+      "deleted": false,
+      "unique_code": "i1EwZuUA7XONl1lo",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Atkbjjbcrc",
+      "type": 1,
+      "status": 4,
+      "territory": 32
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 40,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Vq96cJefRhxeWS8i",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Dobveorucg",
+      "type": 2,
+      "status": 3,
+      "territory": 29
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 41,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ngaMn9gKdmUT4TXL",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Rxdfirrpkn",
+      "type": 3,
+      "status": 1,
+      "territory": 10
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 42,
+    "fields": {
+      "deleted": false,
+      "unique_code": "tUwmiSYhc20uuisg",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Bblxyfdvni",
+      "type": 3,
+      "status": 3,
+      "territory": 11
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 43,
+    "fields": {
+      "deleted": false,
+      "unique_code": "S0pFA0rEHga6MaXR",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Umpqbbgikm",
+      "type": 1,
+      "status": 1,
+      "territory": 30
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 44,
+    "fields": {
+      "deleted": false,
+      "unique_code": "RH7wGjVRJUmkhX0U",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Ejwhgrlpur",
+      "type": 3,
+      "status": 1,
+      "territory": 37
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 45,
+    "fields": {
+      "deleted": false,
+      "unique_code": "B7vArLAQyYg6EoWB",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Iwndonzyyr",
+      "type": 3,
+      "status": 3,
+      "territory": 10
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 46,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Y1osK7kPGCDQP9JO",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Dgienluasn",
+      "type": 1,
+      "status": 1,
+      "territory": 43
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 47,
+    "fields": {
+      "deleted": false,
+      "unique_code": "uShGhQsaqTXf0ofx",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zxhlwtcmnu",
+      "type": 3,
+      "status": 4,
+      "territory": 33
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 48,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Lb1tGJKJ9roMiNGu",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Sqszugsuai",
+      "type": 2,
+      "status": 1,
+      "territory": 13
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 49,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ARTJAiw1VL1woN2u",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Txckbnshxz",
+      "type": 1,
+      "status": 1,
+      "territory": 6
+    }
+  },
+  {
+    "model": "core.factory",
+    "pk": 50,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3PRL85jbbeSIzDj6",
+      "created_at": "2022-07-02T10:08:27.078Z",
+      "updated_at": "2022-07-02T10:08:27.078Z",
+      "name": "Factory_Zbkbrqpubr",
+      "type": 4,
+      "status": 1,
+      "territory": 12
+    }
+  },
+  {
+    "model": "core.factorytype",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "H4N1hnQz7Vl5p4EC",
+      "created_at": "2022-07-02T10:08:18.745Z",
+      "updated_at": "2022-07-02T10:08:18.745Z",
+      "name": "car"
+    }
+  },
+  {
+    "model": "core.factorytype",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "aQcYLtLtsaOwgr3T",
+      "created_at": "2022-07-02T10:08:18.745Z",
+      "updated_at": "2022-07-02T10:08:18.745Z",
+      "name": "food"
+    }
+  },
+  {
+    "model": "core.factorytype",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "EHmzEAXCa3kMXUUY",
+      "created_at": "2022-07-02T10:08:18.745Z",
+      "updated_at": "2022-07-02T10:08:18.745Z",
+      "name": "wood"
+    }
+  },
+  {
+    "model": "core.factorytype",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "GNwDbblKtH3sLYGi",
+      "created_at": "2022-07-02T10:08:18.745Z",
+      "updated_at": "2022-07-02T10:08:18.745Z",
+      "name": "metal"
+    }
+  },
+  {
+    "model": "core.buildingtype",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "KyF351DmbylSpRws",
+      "created_at": "2022-07-02T10:08:18.741Z",
+      "updated_at": "2022-07-02T10:08:18.741Z",
+      "name": "storage"
+    }
+  },
+  {
+    "model": "core.buildingtype",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "4L4Qtvpfp48zuGte",
+      "created_at": "2022-07-02T10:08:18.741Z",
+      "updated_at": "2022-07-02T10:08:18.741Z",
+      "name": "workshop"
+    }
+  },
+  {
+    "model": "core.buildingtype",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "oDAE1hrOPMaWFztu",
+      "created_at": "2022-07-02T10:08:18.741Z",
+      "updated_at": "2022-07-02T10:08:18.741Z",
+      "name": "canteen"
+    }
+  },
+  {
+    "model": "core.buildingtype",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "QCRefVrxAeQ4wL5i",
+      "created_at": "2022-07-02T10:08:18.741Z",
+      "updated_at": "2022-07-02T10:08:18.741Z",
+      "name": "rest_zone"
+    }
+  },
+  {
+    "model": "core.buildingtype",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "SnmO2g0W34j06tas",
+      "created_at": "2022-07-02T10:08:18.741Z",
+      "updated_at": "2022-07-02T10:08:18.741Z",
+      "name": "head_office"
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "QZj2aWK5DfLqkwLH",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Nsorzydfzb",
+      "type": 3,
+      "status": 2,
+      "factory": 33
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "WBuAtt8p3VBBQaR1",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Fudzxvdhyy",
+      "type": 5,
+      "status": 3,
+      "factory": 40
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3EA9WJsiI5sJvJkQ",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Vwvjpwtuyx",
+      "type": 5,
+      "status": 1,
+      "factory": 4
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "9tIjAtqMjtubPO48",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Gsrlodvoyq",
+      "type": 4,
+      "status": 2,
+      "factory": 8
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "f6ZsdjptlAZ8fxD3",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Zbdlboocdf",
+      "type": 4,
+      "status": 1,
+      "factory": 16
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 6,
+    "fields": {
+      "deleted": false,
+      "unique_code": "j3PyOLWs8ZdSLkkS",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Ofnlpqitxw",
+      "type": 1,
+      "status": 4,
+      "factory": 9
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 7,
+    "fields": {
+      "deleted": false,
+      "unique_code": "MlishRYpvlfOGwyQ",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Qsagomuvsm",
+      "type": 5,
+      "status": 2,
+      "factory": 14
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 8,
+    "fields": {
+      "deleted": false,
+      "unique_code": "qGrkPPIzmW7U95Pm",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Jrbzpqdyng",
+      "type": 3,
+      "status": 4,
+      "factory": 5
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 9,
+    "fields": {
+      "deleted": false,
+      "unique_code": "WxusqBC5cfSqxraF",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Icrvszheuf",
+      "type": 3,
+      "status": 2,
+      "factory": 14
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 10,
+    "fields": {
+      "deleted": false,
+      "unique_code": "OatmdzM8sUQJgXR4",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Qzattreqij",
+      "type": 4,
+      "status": 3,
+      "factory": 10
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 11,
+    "fields": {
+      "deleted": false,
+      "unique_code": "wCDFMJEjSEpAwkLO",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Bsjdbdchov",
+      "type": 3,
+      "status": 2,
+      "factory": 3
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 12,
+    "fields": {
+      "deleted": false,
+      "unique_code": "bKJbqfG3fu0ofrFw",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Iivlwdntns",
+      "type": 5,
+      "status": 3,
+      "factory": 49
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 13,
+    "fields": {
+      "deleted": false,
+      "unique_code": "IxkhtCxgMDOdNnsc",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Kxvotcugnc",
+      "type": 1,
+      "status": 2,
+      "factory": 30
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 14,
+    "fields": {
+      "deleted": false,
+      "unique_code": "IBndARwNpP1tIs7s",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Nidaeqddtk",
+      "type": 4,
+      "status": 1,
+      "factory": 25
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 15,
+    "fields": {
+      "deleted": false,
+      "unique_code": "xDtF52jE19lmL47c",
+      "created_at": "2022-07-02T10:08:27.090Z",
+      "updated_at": "2022-07-02T10:08:27.090Z",
+      "name": "Building_Qmkglctfyi",
+      "type": 1,
+      "status": 1,
+      "factory": 10
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 16,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Ei9B24VDW0F06Zhp",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Quzgqrhlok",
+      "type": 2,
+      "status": 4,
+      "factory": 16
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 17,
+    "fields": {
+      "deleted": false,
+      "unique_code": "40uonIu8YIoppmd1",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Lsurubqwgj",
+      "type": 1,
+      "status": 3,
+      "factory": 31
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 18,
+    "fields": {
+      "deleted": false,
+      "unique_code": "kzbcB8cNRK0Nvidx",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Biiecfazxi",
+      "type": 5,
+      "status": 4,
+      "factory": 14
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 19,
+    "fields": {
+      "deleted": false,
+      "unique_code": "E1A3pLT6fiK2ABdU",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Ejpuwsgpjv",
+      "type": 5,
+      "status": 1,
+      "factory": 17
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 20,
+    "fields": {
+      "deleted": false,
+      "unique_code": "X2euiazUX3O9qRQg",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Siiaygztro",
+      "type": 5,
+      "status": 1,
+      "factory": 35
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 21,
+    "fields": {
+      "deleted": false,
+      "unique_code": "vglzqkQ5sUfzTRzW",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Hnwvxysotr",
+      "type": 5,
+      "status": 4,
+      "factory": 36
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 22,
+    "fields": {
+      "deleted": false,
+      "unique_code": "cwpH5ekhFL2KcHFX",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Fhcysqeiix",
+      "type": 1,
+      "status": 1,
+      "factory": 39
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 23,
+    "fields": {
+      "deleted": false,
+      "unique_code": "lx1dozCBsxKErJAU",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Qfvxhcggga",
+      "type": 5,
+      "status": 3,
+      "factory": 33
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 24,
+    "fields": {
+      "deleted": false,
+      "unique_code": "pqdfhJaIxc1vMHFQ",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Ptyzxjokfg",
+      "type": 5,
+      "status": 4,
+      "factory": 42
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 25,
+    "fields": {
+      "deleted": false,
+      "unique_code": "hT29xOaL2szXENcq",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Apznrjjfni",
+      "type": 5,
+      "status": 1,
+      "factory": 27
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 26,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ppCgmliaE4oDjwzg",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Sbwvaiobdr",
+      "type": 3,
+      "status": 1,
+      "factory": 27
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 27,
+    "fields": {
+      "deleted": false,
+      "unique_code": "RZFxliGG7dPvaOMx",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Uvenrnouap",
+      "type": 2,
+      "status": 1,
+      "factory": 47
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 28,
+    "fields": {
+      "deleted": false,
+      "unique_code": "BKhMrYHssAlPPMVB",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Aqrzpjgptb",
+      "type": 4,
+      "status": 1,
+      "factory": 25
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 29,
+    "fields": {
+      "deleted": false,
+      "unique_code": "GYQ7MWMGm83zi4P3",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Hiynhxyhvr",
+      "type": 4,
+      "status": 4,
+      "factory": 34
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 30,
+    "fields": {
+      "deleted": false,
+      "unique_code": "7skgXMIUMqOPwxYj",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Xiwomzfsul",
+      "type": 4,
+      "status": 2,
+      "factory": 29
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 31,
+    "fields": {
+      "deleted": false,
+      "unique_code": "vV3IkjP7Sxs2jm4n",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Zsckrpkird",
+      "type": 5,
+      "status": 4,
+      "factory": 4
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 32,
+    "fields": {
+      "deleted": false,
+      "unique_code": "lznpHLev1Loij6H6",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Bpxggzmegw",
+      "type": 2,
+      "status": 2,
+      "factory": 41
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 33,
+    "fields": {
+      "deleted": false,
+      "unique_code": "C7j4SvRdZ2Jk8PIT",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Dkuzahaydu",
+      "type": 1,
+      "status": 2,
+      "factory": 33
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 34,
+    "fields": {
+      "deleted": false,
+      "unique_code": "SOZzXRGw36PUxbig",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Qxpydyiacv",
+      "type": 5,
+      "status": 1,
+      "factory": 4
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 35,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ZC7bp1Fa6guISDpB",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Pddblmhxdc",
+      "type": 2,
+      "status": 3,
+      "factory": 38
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 36,
+    "fields": {
+      "deleted": false,
+      "unique_code": "xrgtwm7U9I7KbtK5",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Okyrxdirzj",
+      "type": 4,
+      "status": 4,
+      "factory": 4
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 37,
+    "fields": {
+      "deleted": false,
+      "unique_code": "TZaRRyXV7Ih5jwg8",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Zpigzrbdvb",
+      "type": 5,
+      "status": 1,
+      "factory": 34
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 38,
+    "fields": {
+      "deleted": false,
+      "unique_code": "oADNKhLW2CvwMNbq",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Yqfyahxrhc",
+      "type": 2,
+      "status": 4,
+      "factory": 2
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 39,
+    "fields": {
+      "deleted": false,
+      "unique_code": "NDmwx3TxtNPFX2xi",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Jwxnunevha",
+      "type": 1,
+      "status": 1,
+      "factory": 28
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 40,
+    "fields": {
+      "deleted": false,
+      "unique_code": "DIfIQcYxz6CN0zkF",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Qqigjydzqg",
+      "type": 2,
+      "status": 1,
+      "factory": 26
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 41,
+    "fields": {
+      "deleted": false,
+      "unique_code": "wgy5pomDzZr9adOr",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Fgsnurgrmo",
+      "type": 2,
+      "status": 1,
+      "factory": 29
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 42,
+    "fields": {
+      "deleted": false,
+      "unique_code": "b8x59sWVg53wHsei",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Wdfhktdrsk",
+      "type": 5,
+      "status": 3,
+      "factory": 17
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 43,
+    "fields": {
+      "deleted": false,
+      "unique_code": "IGjga589Gv7LUYmD",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Fnxdacczcr",
+      "type": 1,
+      "status": 2,
+      "factory": 12
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 44,
+    "fields": {
+      "deleted": false,
+      "unique_code": "nuNyc8iFciJmxS5k",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Zqdxrfjnvw",
+      "type": 4,
+      "status": 4,
+      "factory": 48
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 45,
+    "fields": {
+      "deleted": false,
+      "unique_code": "2QEnU7JRRPRThSlN",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Rlbwlmmgdr",
+      "type": 3,
+      "status": 2,
+      "factory": 15
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 46,
+    "fields": {
+      "deleted": false,
+      "unique_code": "lMIorRxrVehj9Sam",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Kdqhihizmt",
+      "type": 4,
+      "status": 4,
+      "factory": 22
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 47,
+    "fields": {
+      "deleted": false,
+      "unique_code": "KyLvLDjUS7S4Lwbe",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Pzttqrcvem",
+      "type": 5,
+      "status": 3,
+      "factory": 45
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 48,
+    "fields": {
+      "deleted": false,
+      "unique_code": "grxUB5hOEuSI18XB",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Nklafjjosf",
+      "type": 4,
+      "status": 2,
+      "factory": 18
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 49,
+    "fields": {
+      "deleted": false,
+      "unique_code": "PXYmM8VmcXvf9S4O",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Hgfnyigcxq",
+      "type": 4,
+      "status": 1,
+      "factory": 1
+    }
+  },
+  {
+    "model": "core.building",
+    "pk": 50,
+    "fields": {
+      "deleted": false,
+      "unique_code": "yzk4m412BytxnoZP",
+      "created_at": "2022-07-02T10:08:27.091Z",
+      "updated_at": "2022-07-02T10:08:27.091Z",
+      "name": "Building_Mkdkzkbqed",
+      "type": 2,
+      "status": 2,
+      "factory": 16
+    }
+  },
+  {
+    "model": "core.machinetooltype",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "gvZ5Ki4QKHUobSWJ",
+      "created_at": "2022-07-02T10:08:18.747Z",
+      "updated_at": "2022-07-02T10:08:18.747Z",
+      "name": "case"
+    }
+  },
+  {
+    "model": "core.machinetooltype",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "MrQuoEcDNYfPVSVO",
+      "created_at": "2022-07-02T10:08:18.747Z",
+      "updated_at": "2022-07-02T10:08:18.747Z",
+      "name": "masher"
+    }
+  },
+  {
+    "model": "core.machinetooltype",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "0f5BbcXC17ZlcX1B",
+      "created_at": "2022-07-02T10:08:18.747Z",
+      "updated_at": "2022-07-02T10:08:18.747Z",
+      "name": "painting"
+    }
+  },
+  {
+    "model": "core.machinetooltype",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "tOCVhM6jo4MDI7L6",
+      "created_at": "2022-07-02T10:08:18.747Z",
+      "updated_at": "2022-07-02T10:08:18.747Z",
+      "name": "interior"
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "HqlQ8barvnd6a1ZR",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Kvgflkprrk",
+      "type": 4,
+      "status": 4,
+      "building": 38,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "HRASVAp1mhpJXz4Q",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Kjwpzrkbog",
+      "type": 4,
+      "status": 4,
+      "building": 5,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "GFKcafIrRsOkz5vx",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Xvebxvford",
+      "type": 4,
+      "status": 1,
+      "building": 17,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "2CYUfpvb8r5HfuUT",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Ylolnhjnzs",
+      "type": 3,
+      "status": 1,
+      "building": 9,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "0WcpWz1SSkc3O12A",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Vegohatlhz",
+      "type": 1,
+      "status": 1,
+      "building": 44,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 6,
+    "fields": {
+      "deleted": false,
+      "unique_code": "SIQxtowyHO5kpSfG",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Lwidnijwrl",
+      "type": 3,
+      "status": 3,
+      "building": 1,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 7,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Fnpj5dekl2o6z5UT",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Yioljcwjue",
+      "type": 2,
+      "status": 2,
+      "building": 4,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 8,
+    "fields": {
+      "deleted": false,
+      "unique_code": "9h5b4pBPuR1FsKdL",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Unorzcgisi",
+      "type": 4,
+      "status": 4,
+      "building": 36,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 9,
+    "fields": {
+      "deleted": false,
+      "unique_code": "qJ4MsZGHeC1HCzjg",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Bsxwptcube",
+      "type": 4,
+      "status": 1,
+      "building": 20,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 10,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Xcwkg8OsX49Bw47P",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Emkxxnpesn",
+      "type": 2,
+      "status": 1,
+      "building": 15,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 11,
+    "fields": {
+      "deleted": false,
+      "unique_code": "PAvP5nTiQZHzkFrM",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Pautdkwxka",
+      "type": 3,
+      "status": 1,
+      "building": 30,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 12,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ndckdSSeJBkUHlRX",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Rclfxpaqrc",
+      "type": 3,
+      "status": 1,
+      "building": 35,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 13,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ppfE0OXf9sbjiQOH",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Onyrxfeldj",
+      "type": 4,
+      "status": 3,
+      "building": 41,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 14,
+    "fields": {
+      "deleted": false,
+      "unique_code": "S3Q4oXzTitKeMPYJ",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Rksjyamizi",
+      "type": 4,
+      "status": 1,
+      "building": 40,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 15,
+    "fields": {
+      "deleted": false,
+      "unique_code": "kwpXRKHcUUjCn59c",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Htkwwqtatz",
+      "type": 3,
+      "status": 2,
+      "building": 24,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 16,
+    "fields": {
+      "deleted": false,
+      "unique_code": "et35DjKm5EPrsbM7",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Xupodndbcv",
+      "type": 3,
+      "status": 3,
+      "building": 48,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 17,
+    "fields": {
+      "deleted": false,
+      "unique_code": "szvDOtKOso3DZ4K3",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Esmezyferg",
+      "type": 3,
+      "status": 1,
+      "building": 42,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 18,
+    "fields": {
+      "deleted": false,
+      "unique_code": "k0iZS3fefndXFCQI",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Qiqjvzllgp",
+      "type": 4,
+      "status": 3,
+      "building": 40,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 19,
+    "fields": {
+      "deleted": false,
+      "unique_code": "fqqTzMYHncNY0U5x",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Lduonkfryx",
+      "type": 4,
+      "status": 1,
+      "building": 13,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 20,
+    "fields": {
+      "deleted": false,
+      "unique_code": "hS8nhv8YhxrVX1z4",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Jccflyuhhc",
+      "type": 3,
+      "status": 3,
+      "building": 32,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 21,
+    "fields": {
+      "deleted": false,
+      "unique_code": "PdvT8ywx1UIFCcw2",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Gbxvabtryc",
+      "type": 2,
+      "status": 1,
+      "building": 19,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 22,
+    "fields": {
+      "deleted": false,
+      "unique_code": "0W6S1v1r2rLhDWDM",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Wfhgvdjhrh",
+      "type": 3,
+      "status": 1,
+      "building": 37,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 23,
+    "fields": {
+      "deleted": false,
+      "unique_code": "oXJ3OeF2X7hlbcGG",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Vbngcncgmw",
+      "type": 4,
+      "status": 1,
+      "building": 5,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 24,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Lt6hsAHimavvtKIM",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Fdxihfvfta",
+      "type": 4,
+      "status": 2,
+      "building": 11,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 25,
+    "fields": {
+      "deleted": false,
+      "unique_code": "yePrIrEqYW1nFR5l",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Vtqjbxcdku",
+      "type": 3,
+      "status": 1,
+      "building": 17,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 26,
+    "fields": {
+      "deleted": false,
+      "unique_code": "w4g83IlfDfHSe7AI",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Ixotoerkud",
+      "type": 2,
+      "status": 1,
+      "building": 2,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 27,
+    "fields": {
+      "deleted": false,
+      "unique_code": "28kcUtPBJwh6jPLS",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Rkppdjfmmt",
+      "type": 2,
+      "status": 1,
+      "building": 20,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 28,
+    "fields": {
+      "deleted": false,
+      "unique_code": "dDk0RUzgYumAagoX",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Bowyofrfza",
+      "type": 3,
+      "status": 2,
+      "building": 33,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 29,
+    "fields": {
+      "deleted": false,
+      "unique_code": "9GRFdVCC3gpf8i9i",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Hvkehagwhy",
+      "type": 4,
+      "status": 2,
+      "building": 7,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 30,
+    "fields": {
+      "deleted": false,
+      "unique_code": "z3TUpFbaigmgePfQ",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Zgjwjjaatr",
+      "type": 3,
+      "status": 4,
+      "building": 1,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 31,
+    "fields": {
+      "deleted": false,
+      "unique_code": "AnleiJuvpHFsOubh",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Npaofalucw",
+      "type": 3,
+      "status": 4,
+      "building": 15,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 32,
+    "fields": {
+      "deleted": false,
+      "unique_code": "JVs74r1jcTezKUN3",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Nimgmatcqp",
+      "type": 4,
+      "status": 1,
+      "building": 12,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 33,
+    "fields": {
+      "deleted": false,
+      "unique_code": "koMWOjWlEvzbXCmt",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Bcrpzbnbgy",
+      "type": 2,
+      "status": 3,
+      "building": 37,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 34,
+    "fields": {
+      "deleted": false,
+      "unique_code": "yfxKsrkiVMnCbRAs",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Vxrdbyavuv",
+      "type": 3,
+      "status": 4,
+      "building": 33,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 35,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Va8kV6e9xpOKE64F",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Duencoasjp",
+      "type": 2,
+      "status": 1,
+      "building": 2,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 36,
+    "fields": {
+      "deleted": false,
+      "unique_code": "0ZXvvq0LMl7frGcR",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Sbxymqjblc",
+      "type": 2,
+      "status": 4,
+      "building": 22,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 37,
+    "fields": {
+      "deleted": false,
+      "unique_code": "iV90OSBwMPzgJYlw",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Lmqyvekvoo",
+      "type": 4,
+      "status": 4,
+      "building": 44,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 38,
+    "fields": {
+      "deleted": false,
+      "unique_code": "5xnxKBm31qgN6fyR",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Dpwlgzscdb",
+      "type": 2,
+      "status": 4,
+      "building": 41,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 39,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ET78mTfFXFQP7ANe",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Rifiitgppw",
+      "type": 4,
+      "status": 4,
+      "building": 36,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 40,
+    "fields": {
+      "deleted": false,
+      "unique_code": "UqxgLfOY6mLXyu18",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Xswxcqlsln",
+      "type": 3,
+      "status": 4,
+      "building": 46,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 41,
+    "fields": {
+      "deleted": false,
+      "unique_code": "bQ82lrLsGqBHUEHa",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Kdmdvfzimo",
+      "type": 2,
+      "status": 3,
+      "building": 49,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 42,
+    "fields": {
+      "deleted": false,
+      "unique_code": "qlXTraL66ww7vHkr",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Bcrqxacwnp",
+      "type": 2,
+      "status": 1,
+      "building": 33,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 43,
+    "fields": {
+      "deleted": false,
+      "unique_code": "MhS5yABFmcqKlHai",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Lsyyrmckwr",
+      "type": 3,
+      "status": 1,
+      "building": 37,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 44,
+    "fields": {
+      "deleted": false,
+      "unique_code": "CUkXM2Cyx2ixjffD",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Varylbzfdi",
+      "type": 3,
+      "status": 3,
+      "building": 34,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 45,
+    "fields": {
+      "deleted": false,
+      "unique_code": "coIYHam1DRsIwEYk",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Gkchthrkxm",
+      "type": 3,
+      "status": 4,
+      "building": 19,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 46,
+    "fields": {
+      "deleted": false,
+      "unique_code": "p0dwy5cB5Rg7Xhlz",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Lkyetomybj",
+      "type": 4,
+      "status": 3,
+      "building": 32,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 47,
+    "fields": {
+      "deleted": false,
+      "unique_code": "cCmAkmPnsBxkWzfo",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Cdmmwunrdu",
+      "type": 3,
+      "status": 3,
+      "building": 36,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 48,
+    "fields": {
+      "deleted": false,
+      "unique_code": "nntHSFwBrPVqYb3I",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Kghynsdekt",
+      "type": 4,
+      "status": 2,
+      "building": 36,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 49,
+    "fields": {
+      "deleted": false,
+      "unique_code": "tVklFQGtCI2sMA8a",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Mbyvteukvp",
+      "type": 4,
+      "status": 1,
+      "building": 4,
+      "team": null
+    }
+  },
+  {
+    "model": "core.machinetool",
+    "pk": 50,
+    "fields": {
+      "deleted": false,
+      "unique_code": "dWC8U5Vc4sLPjh0Y",
+      "created_at": "2022-07-02T10:08:27.103Z",
+      "updated_at": "2022-07-02T10:08:27.103Z",
+      "name": "Machine_Tool_Agaxxmrgks",
+      "type": 3,
+      "status": 3,
+      "building": 37,
+      "team": null
+    }
+  },
+  {
+    "model": "core.userrole",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "eqbmMuG2OtHKiW3D",
+      "created_at": "2022-07-02T10:08:18.750Z",
+      "updated_at": "2022-07-02T10:08:18.750Z",
+      "name": "owner"
+    }
+  },
+  {
+    "model": "core.userrole",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "MS3oopRyoldxNqlp",
+      "created_at": "2022-07-02T10:08:18.750Z",
+      "updated_at": "2022-07-02T10:08:18.750Z",
+      "name": "admin"
+    }
+  },
+  {
+    "model": "core.userrole",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "fd9Ybgb9sMmfwW3S",
+      "created_at": "2022-07-02T10:08:18.750Z",
+      "updated_at": "2022-07-02T10:08:18.750Z",
+      "name": "staff"
+    }
+  },
+  {
+    "model": "core.userrole",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3f9zo0uSxKM7Oqar",
+      "created_at": "2022-07-02T10:08:18.750Z",
+      "updated_at": "2022-07-02T10:08:18.750Z",
+      "name": "outsource"
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 1,
+    "fields": {
+      "password": "!R1of58EYp8ds2ucslHVxRTsAka4BomRXPS5fDASm",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Bekturdiyev",
+      "last_name": "Zarif",
+      "email": "9685440@gmail.com",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.852Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 2,
+    "fields": {
+      "password": "!ePhZr4GryY2CS2ZVH3OoWvv5NDmXrgyUnTqkDzAr",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Cdyjgcocjs",
+      "last_name": "Last_Name_Tmkanohcoq",
+      "email": "User1Fnrhvxvuyl@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.858Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 3,
+    "fields": {
+      "password": "!hXbWLh4V6DpCvf6ZkbjUhPbbgmxPNTGlubNHSprC",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Uveggzbfxe",
+      "last_name": "Last_Name_Ficjlvsskv",
+      "email": "User2Egbxvfudgt@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.860Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 4,
+    "fields": {
+      "password": "!86TFbb4W9VdLlDsOQbkwHpl3b3Zn2QflZpoMMnuF",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Wjgbhyywkx",
+      "last_name": "Last_Name_Mpqusrggkx",
+      "email": "User3Dvlflnoiui@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.862Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 5,
+    "fields": {
+      "password": "!t0K4DOVFHsKnxoWIyQdjmIaTtTT5aPjd3ecTuoxY",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Ymeikzdbvd",
+      "last_name": "Last_Name_Fuclxtqirx",
+      "email": "User4Fwrprfewyo@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.864Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 6,
+    "fields": {
+      "password": "!1v8uYcD5AOnXCEv3mBhdwiJgs3dSwSOWqQrQavrG",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Vxfgdmoawz",
+      "last_name": "Last_Name_Nrtnblsmga",
+      "email": "User5Uyztgymdmb@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.866Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 7,
+    "fields": {
+      "password": "!NkoMk4lC5DOCsd3rulKQgXe75nlTs6x5oIF6FuLs",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Hhjcjzhlnv",
+      "last_name": "Last_Name_Bnlyomayfd",
+      "email": "User6Binnbixyuq@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.868Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 8,
+    "fields": {
+      "password": "!g31xdzbYP6BX04ASN7V2pcnHTxpQUzlhfvMTGMDm",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Falkszvkre",
+      "last_name": "Last_Name_Vggawvwmfe",
+      "email": "User7Fazibebtpv@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.870Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 9,
+    "fields": {
+      "password": "!Rj9cXfB01IiVIThjBohU5xTpnwDphuVD9ySXxv0E",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Iaraohrihi",
+      "last_name": "Last_Name_Pfayidcfab",
+      "email": "User8Tilbwvrbsw@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.872Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 10,
+    "fields": {
+      "password": "!g62TLO6pbN2H65K2aRZzUOyXbXdnQA8ncsHURaxY",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Gwgfaenxua",
+      "last_name": "Last_Name_Binmxoydzw",
+      "email": "User9Cjmvsbgdda@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.874Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 11,
+    "fields": {
+      "password": "!F2etANjUYuJ8yVocVAKawFhdfSG5W4FYrT8HNACK",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Jtyentnijl",
+      "last_name": "Last_Name_Wlqcvcrtzj",
+      "email": "User10Nuhstluare@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.875Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 12,
+    "fields": {
+      "password": "!chhFmxWBQUXcUhOli1wA60BO4oYIjk215rgWNEAu",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Qpwsjmgbhl",
+      "last_name": "Last_Name_Xyvyvkbjyt",
+      "email": "User11Clsgvpyosx@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.877Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 13,
+    "fields": {
+      "password": "!k4tOd35Z2KNHGESYo93lZ2vYEhZ246tnNyw7tgS7",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Yhldniwequ",
+      "last_name": "Last_Name_Tfthdjicjf",
+      "email": "User12Weakumupwe@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.879Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 14,
+    "fields": {
+      "password": "!UkLiZXTVB8hCkNqW4fIHVe9KwEUxPQFJAD4GS1yE",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Buqlbcpnte",
+      "last_name": "Last_Name_Zjofimjwlm",
+      "email": "User13Onqhptfbzq@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.881Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 15,
+    "fields": {
+      "password": "!J657uyaG9Vb5UdWjvBSoOaUNzQNvtsfditql7W6n",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Ocobeweqcd",
+      "last_name": "Last_Name_Tbxaneechp",
+      "email": "User14Bovgksumjn@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.882Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 16,
+    "fields": {
+      "password": "!2WSMB4axS4SreRPNUbjjDpzKLaxtWdWf6rZEYLVU",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Spowjbrzfc",
+      "last_name": "Last_Name_Zjksewtljc",
+      "email": "User15Gieqcsudsc@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.884Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 17,
+    "fields": {
+      "password": "!fQdqtuJh5uIFzXWpbnkjchqeLuYdvNwn3BsvBUFU",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Sndnpqacag",
+      "last_name": "Last_Name_Ejvegejipc",
+      "email": "User16Yneffdgnwm@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.886Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 18,
+    "fields": {
+      "password": "!ffgo2BnctQ554uiLDcrI3olClt5EoSrNoP4BbV0l",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Wnivltattc",
+      "last_name": "Last_Name_Mjfsjtnfpb",
+      "email": "User17Qqrcgwehdh@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.889Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 19,
+    "fields": {
+      "password": "!dyMu0bHf1ZGTYR9LvrVL378qVdZJxe8a6w5lSNz2",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Lxvkewbwaz",
+      "last_name": "Last_Name_Xdkehrakdy",
+      "email": "User18Gwibhfeahy@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.891Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 20,
+    "fields": {
+      "password": "!5aifLWsvBV8wXCfeESeaPd7FF7XzZOx0T6RuqD6G",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Rhqvyekzmq",
+      "last_name": "Last_Name_Tfedsopekb",
+      "email": "User19Uctvdotxqp@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.893Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 21,
+    "fields": {
+      "password": "!nwEP20VdDTYIRUBdUrKumnNVOynMFHobmNjqegk5",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Vczyrzknkr",
+      "last_name": "Last_Name_Inxhatnbbb",
+      "email": "User20Kkygaatngi@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.895Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 22,
+    "fields": {
+      "password": "!bmceBD9iARo47VLJaapjji1lQMdf4T6SqiLVz2b7",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Ndothxplvp",
+      "last_name": "Last_Name_Snvsweubwu",
+      "email": "User21Emkvwvzlmo@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.897Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 23,
+    "fields": {
+      "password": "!w8PZ1asQIw1kliNf8DSMiFYrm88sGx4Wc9K0wJhP",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Vcevxjayfj",
+      "last_name": "Last_Name_Tdmujfonib",
+      "email": "User22Zikycbudvd@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.899Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 24,
+    "fields": {
+      "password": "!2rl35V0eWPDKbPq1NZ5bbIIDz7Yp83vk1ww7x87Z",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Ogkhtmjbbn",
+      "last_name": "Last_Name_Ipgeqqmkoq",
+      "email": "User23Yvszrcwfds@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.901Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 25,
+    "fields": {
+      "password": "!s4uIffchGXXXWemqWpLwSH7pB4GQd1vYsP3D3PfO",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Vrdwevmkfx",
+      "last_name": "Last_Name_Xlruiujkkc",
+      "email": "User24Ggcjbxlmdp@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.903Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 26,
+    "fields": {
+      "password": "!Dt5NcMjt3g7O30iRKpvTKxx6P45dpBtpsaAvcgMT",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Czfqjiznvn",
+      "last_name": "Last_Name_Wllwkisvvk",
+      "email": "User25Htnjsqpnct@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.905Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 27,
+    "fields": {
+      "password": "!eHksV2B0vzllymTeOtslE4j2Er2Z7mbgjFp9CMTc",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Gikaaakapf",
+      "last_name": "Last_Name_Curzsatnvk",
+      "email": "User26Gslfjznplw@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.907Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 28,
+    "fields": {
+      "password": "!C17NRk3ejAlHgBATYw2KZteC2XE1xIbjMEQXtgh5",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Kqsqefminu",
+      "last_name": "Last_Name_Pfdxtdaxlj",
+      "email": "User27Njzfwieaac@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.909Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 29,
+    "fields": {
+      "password": "!OJtHAcmXDo4TaTB1iEzCiTC1osh6T05n9mQNzg86",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Yhncnpszub",
+      "last_name": "Last_Name_Wopadpphzp",
+      "email": "User28Ffmwskjiox@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.911Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 30,
+    "fields": {
+      "password": "!Un4YTQLo8V8lkSDwaLph03sr6bkCwfp3G1DIstBG",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Plsuexvqxz",
+      "last_name": "Last_Name_Nqvgopsufd",
+      "email": "User29Iksqirdrpp@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.913Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 31,
+    "fields": {
+      "password": "!NZXGkiizKQAQNLS8LNcOuL6I2kq1nbMuucUft4wV",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Lnxnekyutx",
+      "last_name": "Last_Name_Ubczihurza",
+      "email": "User30Ypkjilfgwg@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.915Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 32,
+    "fields": {
+      "password": "!yjEuAbqnvSjdkSNfEKNEtjOSVNZiXFVVvLtTQtTm",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Pwyeeoccxq",
+      "last_name": "Last_Name_Gokjtknate",
+      "email": "User31Pgccugeurk@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.917Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 33,
+    "fields": {
+      "password": "!Lz68u4WVz1tXppTyRyunGODtxEnoZ2SAI4gZJP1e",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Ckjqdoexpi",
+      "last_name": "Last_Name_Juwhutxxym",
+      "email": "User32Mqhmdngkhm@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.919Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 34,
+    "fields": {
+      "password": "!Uw6g83sWSnCSQ87ROOK19Ic39ZbZWKKm245MGuEY",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Dyanvqfyxd",
+      "last_name": "Last_Name_Omozmrqqwd",
+      "email": "User33Yumynbmiot@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.921Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 35,
+    "fields": {
+      "password": "!rRDcKDBHIuDoLvmdQkaQvwbOMcyIEuqZyLCmLsfj",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Xmsxncspcn",
+      "last_name": "Last_Name_Qitdsakzqx",
+      "email": "User34Nzcwsxmkiq@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.923Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 36,
+    "fields": {
+      "password": "!mbxuctlDpPZgFik7HOTk9vscwXFNDfVa8gBIsdul",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Lontzzgxbw",
+      "last_name": "Last_Name_Mdpuuktlyu",
+      "email": "User35Joldydrjzp@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.925Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 37,
+    "fields": {
+      "password": "!qhLL6NpbKCnwEv7sOG3yfrRRuqHOtdWmYDRB3bL0",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Agoqxnbwvc",
+      "last_name": "Last_Name_Glspyqujeo",
+      "email": "User36Mrchahmohr@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.927Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 38,
+    "fields": {
+      "password": "!cEmveVscIUFcCYJ7oZQHjuTvk5Ee4EXBEVzvBZw0",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Rovgpeyypt",
+      "last_name": "Last_Name_Pfyrvkcyse",
+      "email": "User37Xxdlojkbqg@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.929Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 39,
+    "fields": {
+      "password": "!4C6GcE4R9Seb3yvovFF6M6bsbOcNNx9JBBuQ3f33",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Vignumcfft",
+      "last_name": "Last_Name_Fetfsqmrcs",
+      "email": "User38Nwfwzfomax@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.932Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 40,
+    "fields": {
+      "password": "!5Z8Gjxae2993YoRFQfeTwNe2DBnxwXQOFN2AlPT3",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Udfdlrrhlu",
+      "last_name": "Last_Name_Ikgetraurx",
+      "email": "User39Zbckjrkkpl@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.935Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 41,
+    "fields": {
+      "password": "!vlpZv6XYjjYC5MzT9ts8U4axeB487EcFJaqwB9S2",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Hyteiohwbz",
+      "last_name": "Last_Name_Plkpyzyjha",
+      "email": "User40Guwygbjrof@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.937Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 42,
+    "fields": {
+      "password": "!3r8PtdtNRBcJZ8JpVu8LtFYWB1lJfYeYgsm3z7ie",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Zaxmswexye",
+      "last_name": "Last_Name_Mqfshursfe",
+      "email": "User41Qmwnhykwpe@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.939Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 43,
+    "fields": {
+      "password": "!HO7GWXV0CSLAwRrTQAw0sJ6N7gmQW7uKDVRwAzdF",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Dapugcmthw",
+      "last_name": "Last_Name_Gjoxubzpnn",
+      "email": "User42Rcjyrgvsaw@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.941Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 44,
+    "fields": {
+      "password": "!fQ9sSGeRcltYL3KKFD3GifICAreh95h3bfsusA17",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Gsnnuligom",
+      "last_name": "Last_Name_Emadpnsnsu",
+      "email": "User43Grpghzfddo@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.943Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 45,
+    "fields": {
+      "password": "!jo74DD9vVOckuBM4ZOxngGvorQZvCt9GlCNVee8g",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Wcmmztolei",
+      "last_name": "Last_Name_Gcwrtlbgvj",
+      "email": "User44Msdutkxaes@exadel.io",
+      "role": 2,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.946Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 46,
+    "fields": {
+      "password": "!bUckSW27qKBZuStHHBeKoPAMiucVAQuGuWZ9srwT",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Tedmbhmzlu",
+      "last_name": "Last_Name_Bapmpwaxes",
+      "email": "User45Ytfehcphyc@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.948Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 47,
+    "fields": {
+      "password": "!14ulPOrLVo6GZzerIutRSjPTGS2MN2sPm8HGfk2P",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Wncrxpbpwy",
+      "last_name": "Last_Name_Xukayotayi",
+      "email": "User46Tvqrbongsc@exadel.io",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.950Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 48,
+    "fields": {
+      "password": "!eX76ZFmC4P4YeJPnlEOOqJYw6pKKU4O5wUcHrdJH",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Idewaoxahi",
+      "last_name": "Last_Name_Xftdjmobpx",
+      "email": "User47Eakppldoww@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.953Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 49,
+    "fields": {
+      "password": "!e9cclLXF2ozmK3LeYgEINvjEv5gfp9btyhj6O34J",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Iloryrgcee",
+      "last_name": "Last_Name_Yyjknsthpl",
+      "email": "User48Ryhjpbuedc@exadel.io",
+      "role": 1,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.955Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 50,
+    "fields": {
+      "password": "!XRKPY55jwrnADcsFrarZrp7qWhbf3s6bS03V9Grt",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "First_Name_Cqyoiqdqwr",
+      "last_name": "Last_Name_Qzzsnsxwyr",
+      "email": "User49Sdsnqzwnqh@exadel.io",
+      "role": 4,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:08:26.957Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 52,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$gmx40F3hhjZuytEd8eexhf$qolXSDz4vpEf3s3/kqBhLUe59ROBKn2le/aNMi+lQmg=",
+      "last_login": "2022-07-15T06:20:35.222Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@gmail.com",
+      "role": null,
+      "personal": {},
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-07-02T10:34:36.956Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 53,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9J5BDcQXVzw3LgxTHkr6CG$R1SPFm1NWzVVTT0Ud/FDuzM2WvOSMPnNvprsYCL9Nrc=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Bekturdiyev",
+      "last_name": "Zarif",
+      "email": "bekturdiyevzarif@gmail.com",
+      "role": 3,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-07-15T06:17:46.472Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 54,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$kZIuhksl0UraZjv9t08GYe$JHZc+HLdlQWTgRZ6uy+bQ3Y7FC8vLaQulifNBpDOEHg=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "user@example.com",
+      "role": null,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-01T07:16:48.885Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 55,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$ZBITtJMnRKNDz5phNUfr5S$BYc57vqlaF7slFP6RM1QhML26NZ98hbyL9U5qmcj0Cg=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "user_1@gmail.com",
+      "role": null,
+      "personal": {},
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-01T07:34:08.975Z",
+      "groups": []
+    }
+  },
+  {
+    "model": "core.usertype",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "o1PEGwuIv6iByWHx",
+      "created_at": "2022-07-02T10:08:18.748Z",
+      "updated_at": "2022-07-02T10:08:18.748Z",
+      "name": "it"
+    }
+  },
+  {
+    "model": "core.usertype",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mJQ8hLypwgdv7Dz4",
+      "created_at": "2022-07-02T10:08:18.748Z",
+      "updated_at": "2022-07-02T10:08:18.748Z",
+      "name": "manager"
+    }
+  },
+  {
+    "model": "core.usertype",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mUkz3uZCHXO4ahYw",
+      "created_at": "2022-07-02T10:08:18.748Z",
+      "updated_at": "2022-07-02T10:08:18.748Z",
+      "name": "supervisor"
+    }
+  },
+  {
+    "model": "core.usertype",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mrLVfMVAhc9DR6Rr",
+      "created_at": "2022-07-02T10:08:18.748Z",
+      "updated_at": "2022-07-02T10:08:18.748Z",
+      "name": "worker"
+    }
+  },
+  {
+    "model": "core.usertype",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "UxfUz9D6zrGN4j1y",
+      "created_at": "2022-07-02T10:08:18.748Z",
+      "updated_at": "2022-07-02T10:08:18.748Z",
+      "name": "mechanics"
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "6ejQqPyoKYTko0vc",
+      "created_at": "2022-07-02T10:08:26.856Z",
+      "updated_at": "2022-07-02T10:08:26.856Z",
+      "user": 1,
+      "birth_date": "2003-05-03T10:08:26.854Z",
+      "salary": "1946.0000",
+      "level": "('team_lead', 'Team Lead')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "1vVCGujCVKhmS5UE",
+      "created_at": "2022-07-02T10:08:26.859Z",
+      "updated_at": "2022-07-02T10:08:26.859Z",
+      "user": 2,
+      "birth_date": "2003-05-03T10:08:26.859Z",
+      "salary": "9839.0000",
+      "level": "('junior', 'Junior')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "zHyIUMY03nT6h2qg",
+      "created_at": "2022-07-02T10:08:26.861Z",
+      "updated_at": "2022-07-02T10:08:26.861Z",
+      "user": 3,
+      "birth_date": "2003-05-03T10:08:26.861Z",
+      "salary": "5695.0000",
+      "level": "('middle', 'Middle')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "FV7WuyYWpHaC3vUv",
+      "created_at": "2022-07-02T10:08:26.863Z",
+      "updated_at": "2022-07-02T10:08:26.863Z",
+      "user": 4,
+      "birth_date": "2003-05-03T10:08:26.863Z",
+      "salary": "8059.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "PQ1AGqWJsJSsugNb",
+      "created_at": "2022-07-02T10:08:26.865Z",
+      "updated_at": "2022-07-02T10:08:26.865Z",
+      "user": 5,
+      "birth_date": "2003-05-03T10:08:26.865Z",
+      "salary": "8097.0000",
+      "level": "('senior', 'Senior')",
+      "type": 5
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 6,
+    "fields": {
+      "deleted": false,
+      "unique_code": "cYN2fWHg8pNJo1SQ",
+      "created_at": "2022-07-02T10:08:26.867Z",
+      "updated_at": "2022-07-02T10:08:26.867Z",
+      "user": 6,
+      "birth_date": "2003-05-03T10:08:26.867Z",
+      "salary": "3885.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 7,
+    "fields": {
+      "deleted": false,
+      "unique_code": "eJSk85XXgqy9tZRG",
+      "created_at": "2022-07-02T10:08:26.869Z",
+      "updated_at": "2022-07-02T10:08:26.869Z",
+      "user": 7,
+      "birth_date": "2003-05-03T10:08:26.869Z",
+      "salary": "2034.0000",
+      "level": "('middle', 'Middle')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 8,
+    "fields": {
+      "deleted": false,
+      "unique_code": "jUa6pbypuDUCC007",
+      "created_at": "2022-07-02T10:08:26.871Z",
+      "updated_at": "2022-07-02T10:08:26.871Z",
+      "user": 8,
+      "birth_date": "2003-05-03T10:08:26.871Z",
+      "salary": "6791.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 9,
+    "fields": {
+      "deleted": false,
+      "unique_code": "90nNHI205fMnNkfK",
+      "created_at": "2022-07-02T10:08:26.873Z",
+      "updated_at": "2022-07-02T10:08:26.873Z",
+      "user": 9,
+      "birth_date": "2003-05-03T10:08:26.873Z",
+      "salary": "8715.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 10,
+    "fields": {
+      "deleted": false,
+      "unique_code": "adkb93AEOYSZvfRT",
+      "created_at": "2022-07-02T10:08:26.875Z",
+      "updated_at": "2022-07-02T10:08:26.875Z",
+      "user": 10,
+      "birth_date": "2003-05-03T10:08:26.874Z",
+      "salary": "5820.0000",
+      "level": "('senior', 'Senior')",
+      "type": 5
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 11,
+    "fields": {
+      "deleted": false,
+      "unique_code": "m8mosL2NdcjvsF28",
+      "created_at": "2022-07-02T10:08:26.876Z",
+      "updated_at": "2022-07-02T10:08:26.876Z",
+      "user": 11,
+      "birth_date": "2003-05-03T10:08:26.876Z",
+      "salary": "2173.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 12,
+    "fields": {
+      "deleted": false,
+      "unique_code": "M0oAAu89UlMVl6WZ",
+      "created_at": "2022-07-02T10:08:26.878Z",
+      "updated_at": "2022-07-02T10:08:26.878Z",
+      "user": 12,
+      "birth_date": "2003-05-03T10:08:26.878Z",
+      "salary": "7856.0000",
+      "level": "('middle', 'Middle')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 13,
+    "fields": {
+      "deleted": false,
+      "unique_code": "O7wBYAtaAnCUy7iK",
+      "created_at": "2022-07-02T10:08:26.880Z",
+      "updated_at": "2022-07-02T10:08:26.880Z",
+      "user": 13,
+      "birth_date": "2003-05-03T10:08:26.880Z",
+      "salary": "6141.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 14,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Y1lffay4IJyf768h",
+      "created_at": "2022-07-02T10:08:26.882Z",
+      "updated_at": "2022-07-02T10:08:26.882Z",
+      "user": 14,
+      "birth_date": "2003-05-03T10:08:26.882Z",
+      "salary": "7647.0000",
+      "level": "('middle', 'Middle')",
+      "type": 5
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 15,
+    "fields": {
+      "deleted": false,
+      "unique_code": "4PE8e5X6ZzFbJYOg",
+      "created_at": "2022-07-02T10:08:26.884Z",
+      "updated_at": "2022-07-02T10:08:26.884Z",
+      "user": 15,
+      "birth_date": "2003-05-03T10:08:26.883Z",
+      "salary": "5856.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 16,
+    "fields": {
+      "deleted": false,
+      "unique_code": "zCscuQrEYbe4K89Z",
+      "created_at": "2022-07-02T10:08:26.885Z",
+      "updated_at": "2022-07-02T10:08:26.885Z",
+      "user": 16,
+      "birth_date": "2003-05-03T10:08:26.885Z",
+      "salary": "9951.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 17,
+    "fields": {
+      "deleted": false,
+      "unique_code": "LMC6GsezZvAu9x7a",
+      "created_at": "2022-07-02T10:08:26.889Z",
+      "updated_at": "2022-07-02T10:08:26.889Z",
+      "user": 17,
+      "birth_date": "2003-05-03T10:08:26.888Z",
+      "salary": "4756.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 18,
+    "fields": {
+      "deleted": false,
+      "unique_code": "YaCoSLYDuMrooQVd",
+      "created_at": "2022-07-02T10:08:26.890Z",
+      "updated_at": "2022-07-02T10:08:26.890Z",
+      "user": 18,
+      "birth_date": "2003-05-03T10:08:26.890Z",
+      "salary": "5880.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 19,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mxsmtFCCRp2y3lXI",
+      "created_at": "2022-07-02T10:08:26.892Z",
+      "updated_at": "2022-07-02T10:08:26.892Z",
+      "user": 19,
+      "birth_date": "2003-05-03T10:08:26.892Z",
+      "salary": "9434.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 20,
+    "fields": {
+      "deleted": false,
+      "unique_code": "NrDF3GEQiBBj9XTH",
+      "created_at": "2022-07-02T10:08:26.894Z",
+      "updated_at": "2022-07-02T10:08:26.894Z",
+      "user": 20,
+      "birth_date": "2003-05-03T10:08:26.894Z",
+      "salary": "2274.0000",
+      "level": "('team_lead', 'Team Lead')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 21,
+    "fields": {
+      "deleted": false,
+      "unique_code": "C2dsG9Ru0D9kcQnB",
+      "created_at": "2022-07-02T10:08:26.896Z",
+      "updated_at": "2022-07-02T10:08:26.896Z",
+      "user": 21,
+      "birth_date": "2003-05-03T10:08:26.896Z",
+      "salary": "9830.0000",
+      "level": "('senior', 'Senior')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 22,
+    "fields": {
+      "deleted": false,
+      "unique_code": "VXB2mcyNMDdz4zXE",
+      "created_at": "2022-07-02T10:08:26.898Z",
+      "updated_at": "2022-07-02T10:08:26.898Z",
+      "user": 22,
+      "birth_date": "2003-05-03T10:08:26.898Z",
+      "salary": "3935.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 23,
+    "fields": {
+      "deleted": false,
+      "unique_code": "yOxQJ3qohKBOZBUO",
+      "created_at": "2022-07-02T10:08:26.900Z",
+      "updated_at": "2022-07-02T10:08:26.900Z",
+      "user": 23,
+      "birth_date": "2003-05-03T10:08:26.900Z",
+      "salary": "1623.0000",
+      "level": "('senior', 'Senior')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 24,
+    "fields": {
+      "deleted": false,
+      "unique_code": "aX6F60D4dyhIRMaE",
+      "created_at": "2022-07-02T10:08:26.902Z",
+      "updated_at": "2022-07-02T10:08:26.902Z",
+      "user": 24,
+      "birth_date": "2003-05-03T10:08:26.902Z",
+      "salary": "6132.0000",
+      "level": "('junior', 'Junior')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 25,
+    "fields": {
+      "deleted": false,
+      "unique_code": "7ij87xCQqdQuy10j",
+      "created_at": "2022-07-02T10:08:26.904Z",
+      "updated_at": "2022-07-02T10:08:26.904Z",
+      "user": 25,
+      "birth_date": "2003-05-03T10:08:26.904Z",
+      "salary": "4089.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 26,
+    "fields": {
+      "deleted": false,
+      "unique_code": "SF4bFtj7JccyRqKD",
+      "created_at": "2022-07-02T10:08:26.906Z",
+      "updated_at": "2022-07-02T10:08:26.906Z",
+      "user": 26,
+      "birth_date": "2003-05-03T10:08:26.906Z",
+      "salary": "5705.0000",
+      "level": "('senior', 'Senior')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 27,
+    "fields": {
+      "deleted": false,
+      "unique_code": "YceJS1keWKdj6rP4",
+      "created_at": "2022-07-02T10:08:26.908Z",
+      "updated_at": "2022-07-02T10:08:26.908Z",
+      "user": 27,
+      "birth_date": "2003-05-03T10:08:26.908Z",
+      "salary": "6114.0000",
+      "level": "('junior', 'Junior')",
+      "type": 5
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 28,
+    "fields": {
+      "deleted": false,
+      "unique_code": "UQzrBXWyRwqZCFcJ",
+      "created_at": "2022-07-02T10:08:26.910Z",
+      "updated_at": "2022-07-02T10:08:26.910Z",
+      "user": 28,
+      "birth_date": "2003-05-03T10:08:26.910Z",
+      "salary": "1075.0000",
+      "level": "('junior', 'Junior')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 29,
+    "fields": {
+      "deleted": false,
+      "unique_code": "FrAS7F1SN7J0EYlz",
+      "created_at": "2022-07-02T10:08:26.912Z",
+      "updated_at": "2022-07-02T10:08:26.912Z",
+      "user": 29,
+      "birth_date": "2003-05-03T10:08:26.912Z",
+      "salary": "7232.0000",
+      "level": "('middle', 'Middle')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 30,
+    "fields": {
+      "deleted": false,
+      "unique_code": "bNSgRFZhxFmxhhQ8",
+      "created_at": "2022-07-02T10:08:26.914Z",
+      "updated_at": "2022-07-02T10:08:26.914Z",
+      "user": 30,
+      "birth_date": "2003-05-03T10:08:26.914Z",
+      "salary": "8122.0000",
+      "level": "('team_lead', 'Team Lead')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 31,
+    "fields": {
+      "deleted": false,
+      "unique_code": "WFMt9EsO7PTy1GzF",
+      "created_at": "2022-07-02T10:08:26.916Z",
+      "updated_at": "2022-07-02T10:08:26.916Z",
+      "user": 31,
+      "birth_date": "2003-05-03T10:08:26.916Z",
+      "salary": "3980.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 32,
+    "fields": {
+      "deleted": false,
+      "unique_code": "Vc7p4kekMkZzUOJr",
+      "created_at": "2022-07-02T10:08:26.918Z",
+      "updated_at": "2022-07-02T10:08:26.918Z",
+      "user": 32,
+      "birth_date": "2003-05-03T10:08:26.918Z",
+      "salary": "7940.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 33,
+    "fields": {
+      "deleted": false,
+      "unique_code": "pjsVVLHpE29alSFM",
+      "created_at": "2022-07-02T10:08:26.920Z",
+      "updated_at": "2022-07-02T10:08:26.920Z",
+      "user": 33,
+      "birth_date": "2003-05-03T10:08:26.920Z",
+      "salary": "3822.0000",
+      "level": "('team_lead', 'Team Lead')",
+      "type": 5
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 34,
+    "fields": {
+      "deleted": false,
+      "unique_code": "ja0xN46zzQzNdcVm",
+      "created_at": "2022-07-02T10:08:26.922Z",
+      "updated_at": "2022-07-02T10:08:26.922Z",
+      "user": 34,
+      "birth_date": "2003-05-03T10:08:26.922Z",
+      "salary": "2359.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 35,
+    "fields": {
+      "deleted": false,
+      "unique_code": "EXHc0p2Tz1kZVCdx",
+      "created_at": "2022-07-02T10:08:26.924Z",
+      "updated_at": "2022-07-02T10:08:26.924Z",
+      "user": 35,
+      "birth_date": "2003-05-03T10:08:26.924Z",
+      "salary": "4053.0000",
+      "level": "('junior', 'Junior')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 36,
+    "fields": {
+      "deleted": false,
+      "unique_code": "iTVBujqWF26dsrnS",
+      "created_at": "2022-07-02T10:08:26.926Z",
+      "updated_at": "2022-07-02T10:08:26.926Z",
+      "user": 36,
+      "birth_date": "2003-05-03T10:08:26.926Z",
+      "salary": "3679.0000",
+      "level": "('team_lead', 'Team Lead')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 37,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mtmsuJfIEq6U2WgE",
+      "created_at": "2022-07-02T10:08:26.928Z",
+      "updated_at": "2022-07-02T10:08:26.928Z",
+      "user": 37,
+      "birth_date": "2003-05-03T10:08:26.928Z",
+      "salary": "6137.0000",
+      "level": "('trainee', 'Trainee')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 38,
+    "fields": {
+      "deleted": false,
+      "unique_code": "xONiBxdF4bibHfQh",
+      "created_at": "2022-07-02T10:08:26.930Z",
+      "updated_at": "2022-07-02T10:08:26.930Z",
+      "user": 38,
+      "birth_date": "2003-05-03T10:08:26.930Z",
+      "salary": "7048.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 5
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 39,
+    "fields": {
+      "deleted": false,
+      "unique_code": "glhAcFB1lmUBxvxX",
+      "created_at": "2022-07-02T10:08:26.934Z",
+      "updated_at": "2022-07-02T10:08:26.934Z",
+      "user": 39,
+      "birth_date": "2003-05-03T10:08:26.934Z",
+      "salary": "8308.0000",
+      "level": "('junior', 'Junior')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 40,
+    "fields": {
+      "deleted": false,
+      "unique_code": "TTsVxwHJKbJW0g2D",
+      "created_at": "2022-07-02T10:08:26.936Z",
+      "updated_at": "2022-07-02T10:08:26.936Z",
+      "user": 40,
+      "birth_date": "2003-05-03T10:08:26.936Z",
+      "salary": "2748.0000",
+      "level": "('junior', 'Junior')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 41,
+    "fields": {
+      "deleted": false,
+      "unique_code": "7r6HCp5bFQgMpF8Q",
+      "created_at": "2022-07-02T10:08:26.938Z",
+      "updated_at": "2022-07-02T10:08:26.938Z",
+      "user": 41,
+      "birth_date": "2003-05-03T10:08:26.938Z",
+      "salary": "3631.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 4
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 42,
+    "fields": {
+      "deleted": false,
+      "unique_code": "8EXpHtCog6aPayck",
+      "created_at": "2022-07-02T10:08:26.940Z",
+      "updated_at": "2022-07-02T10:08:26.940Z",
+      "user": 42,
+      "birth_date": "2003-05-03T10:08:26.940Z",
+      "salary": "1479.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 43,
+    "fields": {
+      "deleted": false,
+      "unique_code": "RZjfRrwEm4IWtiaQ",
+      "created_at": "2022-07-02T10:08:26.942Z",
+      "updated_at": "2022-07-02T10:08:26.942Z",
+      "user": 43,
+      "birth_date": "2003-05-03T10:08:26.942Z",
+      "salary": "6297.0000",
+      "level": "('junior', 'Junior')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 44,
+    "fields": {
+      "deleted": false,
+      "unique_code": "3La6EQzZ0em4RvWH",
+      "created_at": "2022-07-02T10:08:26.944Z",
+      "updated_at": "2022-07-02T10:08:26.944Z",
+      "user": 44,
+      "birth_date": "2003-05-03T10:08:26.944Z",
+      "salary": "5302.0000",
+      "level": "('junior', 'Junior')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 45,
+    "fields": {
+      "deleted": false,
+      "unique_code": "GC7GjQABdzaM0y7g",
+      "created_at": "2022-07-02T10:08:26.947Z",
+      "updated_at": "2022-07-02T10:08:26.947Z",
+      "user": 45,
+      "birth_date": "2003-05-03T10:08:26.947Z",
+      "salary": "9511.0000",
+      "level": "('tech_lead', 'Tech Lead')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 46,
+    "fields": {
+      "deleted": false,
+      "unique_code": "aGXXS3fWiazZS8nH",
+      "created_at": "2022-07-02T10:08:26.949Z",
+      "updated_at": "2022-07-02T10:08:26.949Z",
+      "user": 46,
+      "birth_date": "2003-05-03T10:08:26.949Z",
+      "salary": "5100.0000",
+      "level": "('team_lead', 'Team Lead')",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 47,
+    "fields": {
+      "deleted": false,
+      "unique_code": "FxsElRv29a3Ck8vx",
+      "created_at": "2022-07-02T10:08:26.951Z",
+      "updated_at": "2022-07-02T10:08:26.952Z",
+      "user": 47,
+      "birth_date": "2003-05-03T10:08:26.951Z",
+      "salary": "4897.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 48,
+    "fields": {
+      "deleted": false,
+      "unique_code": "mURSpL5YLSccMQRU",
+      "created_at": "2022-07-02T10:08:26.954Z",
+      "updated_at": "2022-07-02T10:08:26.954Z",
+      "user": 48,
+      "birth_date": "2003-05-03T10:08:26.954Z",
+      "salary": "1946.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 49,
+    "fields": {
+      "deleted": false,
+      "unique_code": "cRd7xblbtRP6JH7k",
+      "created_at": "2022-07-02T10:08:26.956Z",
+      "updated_at": "2022-07-02T10:08:26.956Z",
+      "user": 49,
+      "birth_date": "2003-05-03T10:08:26.956Z",
+      "salary": "2370.0000",
+      "level": "('head', 'Head of Department')",
+      "type": 3
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 50,
+    "fields": {
+      "deleted": false,
+      "unique_code": "p7eNdEUq14kXYyMo",
+      "created_at": "2022-07-02T10:08:26.959Z",
+      "updated_at": "2022-07-02T10:08:26.959Z",
+      "user": 50,
+      "birth_date": "2003-05-03T10:08:26.959Z",
+      "salary": "6716.0000",
+      "level": "('senior', 'Senior')",
+      "type": 2
+    }
+  },
+  {
+    "model": "core.userdetail",
+    "pk": 51,
+    "fields": {
+      "deleted": false,
+      "unique_code": "6PXKnQDAjvsDHZiM",
+      "created_at": "2022-07-15T06:21:45.793Z",
+      "updated_at": "2022-07-15T06:22:02.181Z",
+      "user": 53,
+      "birth_date": "1999-03-10T06:21:44Z",
+      "salary": "3000.0000",
+      "level": "middle",
+      "type": 1
+    }
+  },
+  {
+    "model": "core.team",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "B8LtA2Q0lvcoTmXQ",
+      "created_at": "2022-07-02T10:08:27.117Z",
+      "updated_at": "2022-07-02T10:08:27.117Z",
+      "name": "Team_1_Ouqdxywwtf",
+      "status": 3,
+      "machine_tool": null,
+      "building": 31,
+      "users": [
+        21,
+        23,
+        25,
+        26,
+        19
+      ]
+    }
+  },
+  {
+    "model": "core.team",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "bgqbVUogSmUNn6Ts",
+      "created_at": "2022-07-02T10:36:05.589Z",
+      "updated_at": "2022-07-02T10:36:05.589Z",
+      "name": "ADMINS",
+      "status": null,
+      "machine_tool": null,
+      "building": 15,
+      "users": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "core.requeststatus",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "gb9VnF9tU9nF0V0F",
+      "created_at": "2022-07-15T06:27:01.274Z",
+      "updated_at": "2022-07-15T06:27:01.274Z",
+      "name": "approve"
+    }
+  },
+  {
+    "model": "core.requeststatus",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "TgTOLznnLTKuefxx",
+      "created_at": "2022-07-15T06:27:06.016Z",
+      "updated_at": "2022-07-15T06:27:06.016Z",
+      "name": "deny"
+    }
+  },
+  {
+    "model": "core.requeststatus",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "7qWZGpbcdETVBl5r",
+      "created_at": "2022-07-15T06:27:10.245Z",
+      "updated_at": "2022-07-15T06:27:10.245Z",
+      "name": "pending"
+    }
+  },
+  {
+    "model": "core.requesttype",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "gB9nfSGFk3E7KEmL",
+      "created_at": "2022-07-15T06:27:16.739Z",
+      "updated_at": "2022-07-15T06:27:16.739Z",
+      "name": "sick_day"
+    }
+  },
+  {
+    "model": "core.requesttype",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "scST1G1WwS8C6KTm",
+      "created_at": "2022-07-15T06:27:21.182Z",
+      "updated_at": "2022-07-15T06:27:21.182Z",
+      "name": "vacation"
+    }
+  },
+  {
+    "model": "core.requesttype",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "wsmVG31BiJYOT6S0",
+      "created_at": "2022-07-15T06:27:25.170Z",
+      "updated_at": "2022-07-15T06:27:25.170Z",
+      "name": "day_off"
+    }
+  },
+  {
+    "model": "core.request",
+    "pk": 1,
+    "fields": {
+      "deleted": false,
+      "unique_code": "j4zyqzoZR5X2ML5O",
+      "created_at": "2022-07-15T06:29:35.959Z",
+      "updated_at": "2022-07-15T06:29:35.959Z",
+      "type": 2,
+      "status": 3,
+      "created_by": 52,
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-15",
+      "description": "string",
+      "approves": {}
+    }
+  },
+  {
+    "model": "core.request",
+    "pk": 2,
+    "fields": {
+      "deleted": false,
+      "unique_code": "bLODcQmT62mfsJPT",
+      "created_at": "2022-07-15T06:38:05.409Z",
+      "updated_at": "2022-07-15T06:38:05.409Z",
+      "type": 2,
+      "status": 3,
+      "created_by": 52,
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-15",
+      "description": "string",
+      "approves": {}
+    }
+  },
+  {
+    "model": "core.request",
+    "pk": 3,
+    "fields": {
+      "deleted": false,
+      "unique_code": "m9nNBhsQEg5VTtCO",
+      "created_at": "2022-07-15T06:43:35.081Z",
+      "updated_at": "2022-07-15T06:43:35.081Z",
+      "type": 2,
+      "status": 3,
+      "created_by": 52,
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-15",
+      "description": "string",
+      "approves": {}
+    }
+  },
+  {
+    "model": "core.request",
+    "pk": 4,
+    "fields": {
+      "deleted": false,
+      "unique_code": "usc2AmtQmTfdzWq9",
+      "created_at": "2022-07-15T06:46:18.726Z",
+      "updated_at": "2022-07-15T06:46:18.726Z",
+      "type": 2,
+      "status": 3,
+      "created_by": 52,
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-15",
+      "description": "string",
+      "approves": {}
+    }
+  },
+  {
+    "model": "core.request",
+    "pk": 5,
+    "fields": {
+      "deleted": false,
+      "unique_code": "gQSO7xplyfZl8QVr",
+      "created_at": "2022-07-15T06:47:06.069Z",
+      "updated_at": "2022-07-15T06:47:06.069Z",
+      "type": 2,
+      "status": 3,
+      "created_by": 52,
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-15",
+      "description": "string",
+      "approves": {}
+    }
+  },
+  {
+    "model": "core.request",
+    "pk": 6,
+    "fields": {
+      "deleted": false,
+      "unique_code": "EcRpWWvDUvFYOcLo",
+      "created_at": "2022-07-15T10:28:14.255Z",
+      "updated_at": "2022-07-15T10:28:14.255Z",
+      "type": 2,
+      "status": 3,
+      "created_by": 52,
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-15",
+      "description": "string",
+      "approves": {}
+    }
+  }
+]

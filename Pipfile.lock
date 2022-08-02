@@ -143,11 +143,11 @@
         },
         "drf-yasg": {
             "hashes": [
-                "sha256:2f2877a65ba4127d7eeedfa9a77a096db2e3743bd121d745002997b417c0d86a",
-                "sha256:b90ec04c4e395dfdfab02a8b9eea2c1bdcdd694c5b1eb6eba641b772ad0f4a56"
+                "sha256:85899b8b173cac7d39af3fea205bdc1a599aed8de3389a3bcccc29b37b9b983e",
+                "sha256:b2eebb438fa641503a08dac791be24183ea26dbcfe371a9824ea91f6e3a988aa"
             ],
             "index": "pypi",
-            "version": "==1.21.0"
+            "version": "==1.21.3"
         },
         "gunicorn": {
             "hashes": [
@@ -260,11 +260,11 @@
         },
         "phonenumbers": {
             "hashes": [
-                "sha256:9d4a9460127ffd288ae071dd1f7942e2329da5b5c5d57d8aabe7103427ca7cbf",
-                "sha256:ac13b944e18ecb3ad58d9a090a2053dfe3d30dbe3711ebc2945a461b855ad4bf"
+                "sha256:3f3160d1416dbb0be710cc5e914e60d0d3bba00e52edb48af3864efcb8290971",
+                "sha256:d2b5bc70e4fbcf92ddcef6cb81ac8b813157a80b3381f94be777ccadbbe9066f"
             ],
             "index": "pypi",
-            "version": "==8.12.51"
+            "version": "==8.12.52"
         },
         "psycopg2-binary": {
             "hashes": [
@@ -400,11 +400,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:0d33c374d41c7863419fc8f6c10bfe25b7b498aa34164d135c622e52580c6b16",
-                "sha256:c04b44a57a6265fe34a4a444e965884716d34bae963119a76353434d6f18e450"
+                "sha256:273b6847ae61f7829c1affcdd9a32f67aa65233be508f4fbaab866c5faa4e408",
+                "sha256:d5340d16943a0f67057329db59b564e938bb3736c6e50ae16ea84d5e5d9ba6d0"
             ],
             "index": "pypi",
-            "version": "==63.2.0"
+            "version": "==63.3.0"
         },
         "sqlparse": {
             "hashes": [
@@ -432,11 +432,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:8298d6d56d39be0e3bc13c1c97d133f9b45d797169a0e11cdd0e0489d786f7ec",
-                "sha256:879ba4d1e89654d9769ce13121e0f94310ea32e8d2f8cf587b77c08bbcdb30d6"
+                "sha256:c33ccba33c819596124764c23a97d25f32b28433ba0dedeb77d873a38722c9bc",
+                "sha256:ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'",
-            "version": "==1.26.10"
+            "version": "==1.26.11"
         },
         "vine": {
             "hashes": [
@@ -458,11 +458,11 @@
     "develop": {
         "attrs": {
             "hashes": [
-                "sha256:2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4",
-                "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"
+                "sha256:29adc2665447e5191d0e7c568fde78b21f9672d344281d0c6e1ab085429b22b6",
+                "sha256:86efa402f67bf2df34f51a335487cf46b1ec130d02b8d39fd248abfd30da551c"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
-            "version": "==21.4.0"
+            "markers": "python_version >= '3.5'",
+            "version": "==22.1.0"
         },
         "iniconfig": {
             "hashes": [
